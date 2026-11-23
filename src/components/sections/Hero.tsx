@@ -43,7 +43,7 @@ export default function Hero({ onOpenReservation }: HeroProps) {
   }, [handleNextVideo]);
 
   return (
-    <section className="relative min-h-[92vh] sm:min-h-[96vh] flex items-center overflow-hidden bg-[#3B2A22] pt-20 pb-12 sm:pt-24 sm:pb-16">
+    <section className="relative min-h-[92vh] sm:min-h-[96vh] flex items-center overflow-hidden bg-gradient-to-b from-[#190F09] via-[#2A1B14] to-[#1E120B] pt-20 pb-12 sm:pt-24 sm:pb-16">
       {/* Atmospheric Full Background Video covering entire width with wide zoom-out view */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <AnimatePresence mode="popLayout">
@@ -65,11 +65,11 @@ export default function Hero({ onOpenReservation }: HeroProps) {
         </AnimatePresence>
 
         {/* Soft Warm Roasted Coffee Gradient Overlay so Left-Side Text & Logo have crisp readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3B2A22]/95 via-[#3B2A22]/65 to-[#3B2A22]/20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#190F09]/95 via-[#251710]/75 to-[#190F09]/25 pointer-events-none" />
 
         {/* Vertical vignettes top and bottom with warm tone */}
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#3B2A22] to-transparent pointer-events-none" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#3B2A22] to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#190F09] via-[#190F09]/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#190F09] via-[#190F09]/70 to-transparent pointer-events-none" />
 
         {/* Ambient warm caramel glow orbs with breathing pulse */}
         <div className="absolute top-1/3 left-10 w-[550px] h-[450px] bg-[#D49B55]/20 rounded-full blur-[170px] pointer-events-none animate-glow-pulse" />
@@ -91,20 +91,7 @@ export default function Hero({ onOpenReservation }: HeroProps) {
             <NeonSign size="large" align="left" />
           </motion.div>
 
-          {/* Luxury Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-luxury mb-4 border border-[#D49B55]/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#D49B55] animate-ping" />
-            <span className="text-[11px] font-mono tracking-[0.2em] uppercase text-[#E8DBCE]">
-              Pattaya, Thailand • Cafe &amp; Bar
-            </span>
-          </motion.div>
-
-          {/* Main Headline with 3D Shimmer Gradient */}
+          {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -143,25 +130,6 @@ export default function Hero({ onOpenReservation }: HeroProps) {
           </motion.div>
         </div>
       </div>
-
-      {/* Smooth Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1.5 pointer-events-none z-20"
-      >
-        <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-[#C4A77D]/60">
-          Scroll
-        </span>
-        <div className="w-5 h-8 rounded-full border border-[#D49B55]/30 flex items-start justify-center p-1">
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1 h-2 rounded-full bg-[#D49B55]"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }

@@ -92,7 +92,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
   const current = moodData[activeMood];
 
   return (
-    <section id="experience" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EF] via-[#F2E8DC] to-[#EAE0D2] text-[#2C1F18] overflow-hidden">
+    <section id="experience" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
       {/* Decorative dynamic ambient glow */}
       <div
         className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full blur-[180px] pointer-events-none transition-colors duration-700 animate-glow-pulse ${

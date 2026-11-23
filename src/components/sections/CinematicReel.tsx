@@ -85,9 +85,10 @@ export default function CinematicReel() {
   };
 
   return (
-    <section id="motion" className="relative py-28 sm:py-36 bg-[#3B2A22] text-[#FDF9F3] overflow-hidden">
+    <section id="motion" className="relative py-28 sm:py-36 bg-gradient-to-b from-[#180E09] via-[#2A1A12] to-[#180E09] text-[#FDF9F3] overflow-hidden">
       {/* Background ambient light */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[#D49B55]/10 rounded-full blur-[170px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-[#D49B55]/15 rounded-full blur-[180px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-[#8B5E33]/20 rounded-full blur-[150px] pointer-events-none animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -107,7 +108,7 @@ export default function CinematicReel() {
         </div>
 
         {/* Master Cinema Screen */}
-        <div className="relative rounded-3xl overflow-hidden bg-[#48332A] border border-[#C4A77D]/35 shadow-[0_20px_60px_rgba(0,0,0,0.5)] mb-8">
+        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#382318] to-[#1E110A] border border-[#D49B55]/40 shadow-[0_25px_70px_rgba(0,0,0,0.6)] mb-8">
           <div className="relative aspect-video sm:aspect-[21/9] w-full overflow-hidden bg-black flex items-center justify-center">
             <video
               ref={videoRef}

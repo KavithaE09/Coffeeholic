@@ -23,7 +23,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#33241C] text-[#FDF9F3] border-t border-[#C4A77D]/25 pt-20 pb-12 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-[#180E09] via-[#24150E] to-[#0D0704] text-[#FDF9F3] border-t border-[#D49B55]/30 pt-20 pb-12 overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-[#D49B55]/10 rounded-full blur-[150px] pointer-events-none" />
 

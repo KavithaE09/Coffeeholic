@@ -16,9 +16,10 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
   const location = locationsData[0]; // Only CoffeeHolic Pattaya
 
   return (
-    <section id="locations" className="relative py-28 sm:py-36 bg-[#F7F2EC] text-[#2C1F18] overflow-hidden">
+    <section id="locations" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
       {/* Background glow effects */}
-      <div className="absolute top-1/3 left-10 w-[500px] h-[500px] bg-[#D49B55]/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 left-10 w-[550px] h-[550px] bg-[#D49B55]/15 rounded-full blur-[170px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-[#8B5E33]/15 rounded-full blur-[140px] pointer-events-none animate-float" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -44,7 +45,7 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 bg-[#FFFFFF] border border-[#E2D5C8] rounded-3xl p-6 sm:p-10 shadow-[0_15px_45px_rgba(72,51,42,0.08)] relative overflow-hidden"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 bg-gradient-to-br from-[#FFFFFF] via-[#FAF6F0] to-[#F3E9DD] border border-[#D5C2B0] rounded-3xl p-6 sm:p-10 shadow-[0_20px_50px_rgba(72,51,42,0.12)] relative overflow-hidden"
         >
           {/* Top Amber Light Bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#8B5E33] to-transparent opacity-80" />

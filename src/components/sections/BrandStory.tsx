@@ -8,7 +8,7 @@ export default function BrandStory() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="relative py-24 sm:py-32 bg-gradient-to-br from-[#FAF5EF] via-[#F2E8DC] to-[#EAE0D2] text-[#2C1F18] overflow-hidden">
+    <section id="about" className="relative py-24 sm:py-32 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
       {/* Ambient warm gradient orbs */}
       <div className="absolute top-10 right-10 w-[450px] h-[450px] bg-[#D49B55]/12 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
       <div className="absolute -bottom-10 left-10 w-[400px] h-[400px] bg-[#8B5E33]/10 rounded-full blur-[130px] pointer-events-none animate-float" />
@@ -51,20 +51,7 @@ export default function BrandStory() {
             </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.85, delay: 0.2 }}
-            className="lg:col-span-6 flex flex-col justify-center space-y-7"
-          >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E4D5C5] border border-[#C4A77D]/40 w-fit">
-              <span className="w-2 h-2 rounded-full bg-[#8B5E33]" />
-              <span className="text-[11px] font-mono tracking-[0.2em] uppercase text-[#6B4B32] font-semibold">
-                Sanctuary in Pattaya
-              </span>
-            </div>
-
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18] leading-[1.15]">
               {t("story.title", "From Sacred Highlands to Pattaya Shores")}
             </h2>
@@ -80,7 +67,7 @@ export default function BrandStory() {
                 {t("story.p2", "Every bean is sourced from single-origin micro-lots nestled in Chiang Mai's mist-covered canopies and world-renowned volcanic terroirs. Hand-roasted in small batches, extracted at precise pressure profiles.")}
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

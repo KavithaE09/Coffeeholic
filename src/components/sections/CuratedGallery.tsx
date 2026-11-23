@@ -13,8 +13,12 @@ export default function CuratedGallery() {
   const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);
 
   return (
-    <section id="gallery" className="relative py-28 sm:py-36 bg-[#48332A] text-[#FDF9F3] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="relative py-28 sm:py-36 bg-gradient-to-b from-[#180E09] via-[#2F1E15] to-[#180E09] text-[#FDF9F3] overflow-hidden">
+      {/* Background ambient light */}
+      <div className="absolute top-1/3 left-10 w-[550px] h-[550px] bg-[#D49B55]/12 rounded-full blur-[170px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#8B5E33]/20 rounded-full blur-[150px] pointer-events-none animate-float" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
@@ -38,7 +42,7 @@ export default function CuratedGallery() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: index * 0.1 }}
                 onClick={() => setActiveItem(item)}
-                className={`group relative rounded-2xl overflow-hidden bg-[#3B2A22] border border-[#C4A77D]/30 hover:border-[#D49B55] shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_rgba(139,94,51,0.25)] transition-all duration-500 cursor-pointer ${
+                className={`card-3d group relative rounded-2xl overflow-hidden bg-gradient-to-b from-[#382318] to-[#1C1009] border border-[#C4A77D]/35 hover:border-[#D49B55] shadow-[0_12px_35px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_50px_rgba(212,155,85,0.3)] transition-all duration-500 cursor-pointer ${
                   isTall ? "md:row-span-2 aspect-[3/4]" : "aspect-[4/3]"
                 }`}
               >

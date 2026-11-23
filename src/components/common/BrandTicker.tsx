@@ -22,9 +22,9 @@ export default function BrandTicker() {
   const duplicated = [...items, ...items, ...items];
 
   return (
-    <div className="relative w-full overflow-hidden bg-[#4A352B] border-y border-[#C4A77D]/25 py-3.5 select-none z-20">
-      <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#3B2A22] to-transparent z-10 pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#3B2A22] to-transparent z-10 pointer-events-none" />
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-[#190F09] via-[#352319] to-[#190F09] border-y border-[#D49B55]/30 py-3.5 select-none z-20 shadow-md">
+      <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#190F09] to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#190F09] to-transparent z-10 pointer-events-none" />
 
       <motion.div
         animate={{ x: ["0%", "-50%"] }}

@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <main className="relative bg-[#3B2A22] min-h-screen text-[#FDF9F3] overflow-hidden">
+    <main className="relative bg-gradient-to-b from-[#1C120C] via-[#2A1B14] to-[#140C08] min-h-screen text-[#FDF9F3] overflow-hidden">
       {/* Navigation */}
       <Navbar onOpenReservation={() => handleOpenReservation()} />
 
