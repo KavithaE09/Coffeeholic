@@ -17,13 +17,13 @@ export default function BrandStory() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative w-full h-[600px] sm:h-[680px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-2xl"
+              className="relative w-full h-[400px] sm:h-[460px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-2xl"
             >
               <Image
                 src="/assets/real/storefront-night.jpg"
                 alt="Coffee HOLIC Cafe & Bar - Pattaya"
                 fill
-                className="object-cover"
+                className="object-cover object-bottom"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#2C1F18]/30 via-transparent to-transparent pointer-events-none" />
