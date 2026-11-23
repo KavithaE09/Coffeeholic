@@ -16,7 +16,7 @@ export default function BrandTicker() {
     t("ticker.omakase", "Omakase Tasting"),
     t("ticker.cocktails", "Signature Cocktails"),
     t("ticker.night_salon", "Twilight Cocktail Salon"),
-    "Open Daily • 08:00–Midnight",
+    "Open Daily • 08:00–20:00",
   ];
 
   const duplicated = [...items, ...items, ...items];

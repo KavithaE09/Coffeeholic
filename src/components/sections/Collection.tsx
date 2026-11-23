@@ -15,10 +15,10 @@ export default function Collection() {
 
   const categories = [
     { id: "all", label: t("collection.tab_all", "All Items") },
-    { id: "caffeine", label: "Caffeine Stimulants" },
-    { id: "iced", label: "Daily Dose of Iced" },
-    { id: "frappe", label: "Fusion Frappe" },
-    { id: "fizzy", label: "Fizzy Antidote" },
+    { id: "caffeine", label: t("collection.tab_caffeine", "Caffeine Stimulants") },
+    { id: "iced", label: t("collection.tab_iced", "Daily Dose of Iced") },
+    { id: "frappe", label: t("collection.tab_frappe", "First Aid Fusion Frappe") },
+    { id: "fizzy", label: t("collection.tab_fizzy", "Fizzy Antidote") },
   ];
 
   const filteredItems =
@@ -40,7 +40,7 @@ export default function Collection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
-              {t("collection.title", "The Cafe Collection.")}
+              {t("collection.title", "The Daily Cafe Menu")}
             </h2>
           </div>
 

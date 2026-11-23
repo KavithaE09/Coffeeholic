@@ -83,16 +83,18 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "story.quote": "“We do not simply brew coffee; we orchestrate an intimate encounter between botanical terroir, thermodynamic craft, and the human palate.”",
 
     // Collection
-  
-    "collection.title": "Single-Origin Flights & Artisanal Cocktails",
-    "collection.desc": "From delicate anaerobic natural geishas extracted on custom ceramic drippers to velvety twilight espresso martinis smoked with applewood.",
-    "collection.tab_all": "All Creations",
-    "collection.tab_signature": "Signature Drips",
-    "collection.tab_pourover": "Pour Over Flights",
-    "collection.tab_cocktails": "Nocturnal Mixology",
+    "collection.title": "The Daily Cafe Menu",
+    "collection.desc": "Emergency Refreshment Unit — Crafted specialty coffee, daily iced doses, rich fusion frappes, and fizzy sparkling antidotes in Pattaya.",
+    "collection.tab_all": "All Items",
+    "collection.tab_caffeine": "Caffeine Stimulants",
+    "collection.tab_iced": "Daily Dose of Iced",
+    "collection.tab_frappe": "First Aid Fusion Frappe",
+    "collection.tab_fizzy": "Fizzy Antidote",
     "collection.order_button": "Experience at Bar",
 
     // Atelier Experience
+    "exp.badge": "Sensory Transition",
+    "exp.section_title": "Day Slow Bar • Night Lounge",
     
     "exp.title": "The Day Atelier & The Night Sanctuary",
     "exp.day_title": "Day Atelier",
@@ -212,17 +214,18 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "story.quote": "“เราไม่ได้เพียงชงกาแฟ แต่เรารังสรรค์การพบกันระหว่างรสชาติของผืนดิน งานฝีมือชั้นสูง และประสาทสัมผัสของคุณ”",
 
     // Collection
-    "collection.badge": "เมนูคัดสรรพิเศษ",
-    "collection.title": "กาแฟซิงเกิลออริจินและค็อกเทลสูตรพิเศษ",
-    "collection.desc": "ตั้งแต่เกอิชาสายพันธุ์หายากที่สกัดผ่านดริปเปอร์เซรามิกแฮนด์เมด ไปจนถึงเอสเปรสโซมาร์ตินี่รมควันไม้แอปเปิ้ลสุดหรู",
-    "collection.tab_all": "ทั้งหมด",
-    "collection.tab_signature": "ดริปสูตรซิกเนเจอร์",
-    "collection.tab_pourover": "เซ็ตทดลองชิม",
-    "collection.tab_cocktails": "ค็อกเทลยามค่ำ",
-    "collection.order_button": "สัมผัสรสชาติที่บาร์",
+    "collection.title": "เมนูเครื่องดื่มประจำวัน (The Daily Cafe Menu)",
+    "collection.desc": "เมนูกาแฟพิเศษ ชาเย็นสูตรเข้มข้น ฟิวชั่นแฟรปเป้ปั่น และโซดาเติมความสดชื่นในพัทยา",
+    "collection.tab_all": "ทุกเมนู",
+    "collection.tab_caffeine": "กาแฟ (Caffeine Stimulants)",
+    "collection.tab_iced": "เครื่องดื่มเย็น (Daily Dose of Iced)",
+    "collection.tab_frappe": "ฟิวชั่นปั่น (First Aid Fusion Frappe)",
+    "collection.tab_fizzy": "โซดาคลายร้อน (Fizzy Antidote)",
+    "collection.order_button": "สั่งได้ที่เคาน์เตอร์บาร์",
 
     // Atelier Experience
     "exp.badge": "สองมิติแห่งรสชาติ",
+    "exp.section_title": "สโลว์บาร์กลางวัน • เลานจ์กลางคืน",
     "exp.title": "สตูดิโอกาแฟกลางวันและบาร์ค็อกเทลกลางคืน",
     "exp.day_title": "กลางวัน: คาเฟ่อาเตอลิเยร์",
     "exp.day_hours": "08:00 – 18:00 น.",
@@ -342,17 +345,18 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "story.quote": "«Мы не просто завариваем кофе — мы создаем гармонию между дарами природы, мастерством бариста и вашими чувствами.»",
 
     // Collection
-    "collection.badge": "Эксклюзивное меню",
-    "collection.title": "Спешелти сеты и авторские коктейли",
-    "collection.desc": "От редкой анаэробной гейши, заваренной в керамическом воронке, до бархатного эспрессо мартини с ароматом яблочного дыма.",
+    "collection.title": "Меню кафе (The Daily Cafe Menu)",
+    "collection.desc": "Спешелти кофе, освежающие холодные напитки, нежные фраппе и игристые лимонады в Паттайе.",
     "collection.tab_all": "Все позиции",
-    "collection.tab_signature": "Фирменный дрип",
-    "collection.tab_pourover": "Дегустационные сеты",
-    "collection.tab_cocktails": "Ночная миксология",
-    "collection.order_button": "Попробовать за баром",
+    "collection.tab_caffeine": "Кофе (Caffeine Stimulants)",
+    "collection.tab_iced": "Холодные напитки (Daily Dose of Iced)",
+    "collection.tab_frappe": "Фраппе (First Aid Fusion Frappe)",
+    "collection.tab_fizzy": "Игристые содовые (Fizzy Antidote)",
+    "collection.order_button": "Заказать за баром",
 
     // Atelier Experience
     "exp.badge": "Двойственная атмосфера",
+    "exp.section_title": "Дневной бар • Ночной лаунж",
     "exp.title": "Дневное ателье и ночное святилище",
     "exp.day_title": "Дневное ателье",
     "exp.day_hours": "08:00 – 18:00",
@@ -472,17 +476,18 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "story.quote": "“我们不仅是在冲煮咖啡，更是在编织一场植物风土、热力学匠艺与人类味蕾之间的神圣邂逅。”",
 
     // Collection
-    "collection.badge": "精选菜单",
-    "collection.title": "单一产区咖啡与特调鸡尾酒",
-    "collection.desc": "从手工陶瓷滤杯慢萃的珍稀厌氧日晒瑰夏，到融入苹果木冷烟熏的丝绒浓缩马提尼。",
-    "collection.tab_all": "全部系列",
-    "collection.tab_signature": "招牌慢滴",
-    "collection.tab_pourover": "手冲品鉴组合",
-    "collection.tab_cocktails": "夜间特调鸡尾酒",
-    "collection.order_button": "于吧台品鉴",
+    "collection.title": "每日咖啡菜单 (The Daily Cafe Menu)",
+    "collection.desc": "芭堤雅精品咖啡、每日特调冰饮、浓郁融合冰沙与清爽气泡苏打。",
+    "collection.tab_all": "全部饮品",
+    "collection.tab_caffeine": "咖啡提神 (Caffeine Stimulants)",
+    "collection.tab_iced": "每日冰饮 (Daily Dose of Iced)",
+    "collection.tab_frappe": "急救融合冰沙 (First Aid Fusion Frappe)",
+    "collection.tab_fizzy": "气泡解渴 (Fizzy Antidote)",
+    "collection.order_button": "吧台即刻品鉴",
 
     // Atelier Experience
     "exp.badge": "双重意境",
+    "exp.section_title": "白昼慢吧 • 夜色酒廊",
     "exp.title": "白昼工坊与夜幕庇护所",
     "exp.day_title": "白昼工坊",
     "exp.day_hours": "08:00 – 18:00",
