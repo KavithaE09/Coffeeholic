@@ -17,7 +17,7 @@ export default function BrandStory() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative aspect-[16/11] sm:aspect-[4/3] w-full max-h-[380px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-xl"
+              className="relative aspect-[4/3] sm:aspect-[3/2] w-full max-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-2xl"
             >
               <Image
                 src="/assets/real/storefront-night.jpg"
@@ -35,10 +35,10 @@ export default function BrandStory() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden sm:block absolute -bottom-5 -right-4 w-36 sm:w-44 aspect-[4/3] rounded-xl overflow-hidden border-2 border-[#8B5E33] shadow-2xl z-10"
+              className="hidden sm:block absolute -bottom-6 -right-5 w-44 sm:w-56 aspect-[4/3] rounded-xl overflow-hidden border-2 border-[#8B5E33] shadow-2xl z-10"
             >
               <Image
-                src="/assets/real/storefront-night.jpg"
+                src="/assets/real/logo-glass-crop.jpg"
                 alt="Coffee HOLIC interior detail"
                 fill
                 className="object-cover object-bottom"
