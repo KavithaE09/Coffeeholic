@@ -71,10 +71,10 @@ export default function Hero({ onOpenReservation }: HeroProps) {
         <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#190F09] via-[#190F09]/60 to-transparent pointer-events-none" />
         <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#190F09] via-[#190F09]/70 to-transparent pointer-events-none" />
 
-        {/* Ambient warm caramel glow orbs with breathing pulse */}
-        <div className="absolute top-1/3 left-10 w-[550px] h-[450px] bg-[#D49B55]/20 rounded-full blur-[170px] pointer-events-none animate-glow-pulse" />
-        <div className="absolute bottom-1/4 right-12 w-[420px] h-[420px] bg-[#8B5E33]/25 rounded-full blur-[150px] pointer-events-none animate-float" />
-        <div className="absolute top-12 right-1/4 w-[320px] h-[320px] bg-[#D49B55]/15 rounded-full blur-[130px] pointer-events-none animate-float-delayed" />
+        {/* Ambient vibrant dual-color glowing orbs */}
+        <div className="absolute top-1/3 left-10 w-[600px] h-[500px] bg-gradient-to-tr from-[#FFA827]/35 to-[#FFD580]/25 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
+        <div className="absolute bottom-1/4 right-12 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/40 to-[#D46B28]/30 rounded-full blur-[140px] pointer-events-none animate-float" />
+        <div className="absolute top-12 right-1/4 w-[350px] h-[350px] bg-gradient-to-r from-[#D49B55]/30 to-[#FFA827]/20 rounded-full blur-[120px] pointer-events-none animate-float-delayed" />
       </div>
 
       {/* Hero Content Layer */}

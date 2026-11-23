@@ -8,10 +8,10 @@ export default function BrandStory() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="relative py-24 sm:py-32 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
-      {/* Ambient warm gradient orbs */}
-      <div className="absolute top-10 right-10 w-[450px] h-[450px] bg-[#D49B55]/12 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute -bottom-10 left-10 w-[400px] h-[400px] bg-[#8B5E33]/10 rounded-full blur-[130px] pointer-events-none animate-float" />
+    <section id="about" className="relative py-24 sm:py-32 bg-dual-cream text-[#2C1F18] overflow-hidden">
+      {/* Dynamic Dual-Color Glowing Orbs */}
+      <div className="absolute top-10 right-10 w-[550px] h-[550px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute -bottom-10 left-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

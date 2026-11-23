@@ -85,10 +85,10 @@ export default function CinematicReel() {
   };
 
   return (
-    <section id="motion" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
-      {/* Background ambient light */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-[#D49B55]/15 rounded-full blur-[180px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-[#8B5E33]/15 rounded-full blur-[150px] pointer-events-none animate-float" />
+    <section id="motion" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+      {/* Background ambient dual-color glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[160px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

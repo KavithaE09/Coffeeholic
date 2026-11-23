@@ -30,11 +30,11 @@ export default function Collection() {
   const hasMore = filteredItems.length > 6;
 
   return (
-    <section id="collection" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
-      {/* Ambient background glows with 3D depth */}
-      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#D49B55]/15 rounded-full blur-[180px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 left-0 w-[500px] h-[500px] bg-[#8B5E33]/15 rounded-full blur-[160px] pointer-events-none animate-float" />
-      <div className="absolute top-1/2 left-1/3 w-[350px] h-[350px] bg-[#D49B55]/10 rounded-full blur-[140px] pointer-events-none animate-float-delayed" />
+    <section id="collection" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+      {/* Dynamic Dual-Color Glowing Orbs */}
+      <div className="absolute top-1/4 right-0 w-[650px] h-[650px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[150px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 left-0 w-[550px] h-[550px] bg-gradient-to-br from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[150px] pointer-events-none animate-float" />
+      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-[#FFA827]/20 rounded-full blur-[130px] pointer-events-none animate-float-delayed" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
@@ -100,7 +100,7 @@ export default function Collection() {
                 transition={{ duration: 0.45 }}
                 whileHover={{ y: -6 }}
                 onClick={() => setSelectedProduct(item)}
-                className="card-3d group relative rounded-2xl overflow-hidden bg-white border border-[#D5C2B0] hover:border-[#8B5E33] shadow-[0_12px_35px_rgba(44,31,24,0.08)] hover:shadow-[0_22px_50px_rgba(139,94,51,0.22)] cursor-pointer flex flex-col justify-between"
+                className="card-3d dual-glow-card group relative rounded-2xl overflow-hidden cursor-pointer flex flex-col justify-between"
               >
                 {/* Product Image Container */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#FAF5EE]">
@@ -166,7 +166,7 @@ export default function Collection() {
               whileHover={{ scale: 1.04, y: -2 }}
               whileTap={{ scale: 0.96 }}
               onClick={() => setIsExpanded(!isExpanded)}
-              className="group px-9 py-4 rounded-full bg-gradient-to-r from-[#8B5E33] via-[#D49B55] to-[#8B5E33] bg-[length:200%_auto] hover:bg-[position:right_center] text-[#FFF9F2] text-xs font-mono uppercase tracking-[0.2em] font-semibold shadow-[0_6px_30px_rgba(212,155,85,0.4)] border border-[#F5C842]/45 transition-all duration-500 flex items-center gap-3 cursor-pointer"
+              className="btn-dual-glow group px-9 py-4 rounded-full text-[#FFF9F2] text-xs font-mono uppercase tracking-[0.2em] font-semibold border border-[#F5C842]/60 flex items-center gap-3 cursor-pointer"
             >
               <span>
                 {isExpanded

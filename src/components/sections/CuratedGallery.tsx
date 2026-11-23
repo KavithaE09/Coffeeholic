@@ -13,10 +13,11 @@ export default function CuratedGallery() {
   const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);
 
   return (
-    <section id="gallery" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
-      {/* Background ambient light */}
-      <div className="absolute top-1/3 left-10 w-[550px] h-[550px] bg-[#D49B55]/15 rounded-full blur-[170px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#8B5E33]/15 rounded-full blur-[150px] pointer-events-none animate-float" />
+    <section id="gallery" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+      {/* Dynamic Dual-Color Glowing Orbs */}
+      <div className="absolute top-1/4 left-10 w-[600px] h-[600px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
+      <div className="absolute top-1/2 right-1/4 w-[350px] h-[350px] bg-[#FFA827]/20 rounded-full blur-[120px] pointer-events-none animate-float-delayed" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -42,7 +43,7 @@ export default function CuratedGallery() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: index * 0.1 }}
                 onClick={() => setActiveItem(item)}
-                className={`card-3d group relative rounded-2xl overflow-hidden bg-white border border-[#D5C2B0] shadow-[0_12px_35px_rgba(44,31,24,0.1)] hover:shadow-[0_20px_50px_rgba(139,94,51,0.25)] hover:border-[#D49B55] transition-all duration-500 cursor-pointer ${
+                className={`card-3d dual-glow-card group relative rounded-2xl overflow-hidden cursor-pointer ${
                   isTall ? "md:row-span-2 aspect-[3/4]" : "aspect-[4/3]"
                 }`}
               >

@@ -92,14 +92,14 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
   const current = moodData[activeMood];
 
   return (
-    <section id="experience" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
-      {/* Decorative dynamic ambient glow */}
+    <section id="experience" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+      {/* Decorative dynamic ambient glow with intense dual-color pulse */}
       <div
-        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full blur-[180px] pointer-events-none transition-colors duration-700 animate-glow-pulse ${
-          activeMood === "day" ? "bg-[#D49B55]/15" : "bg-[#8B5E33]/20"
+        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[550px] rounded-full blur-[160px] pointer-events-none transition-colors duration-700 animate-glow-pulse ${
+          activeMood === "day" ? "bg-gradient-to-r from-[#FFA827]/30 to-[#F5C842]/20" : "bg-gradient-to-r from-[#8B5E33]/35 to-[#D46B28]/25"
         }`}
       />
-      <div className="absolute top-10 right-10 w-[350px] h-[350px] bg-[#D49B55]/10 rounded-full blur-[120px] pointer-events-none animate-float" />
+      <div className="absolute top-10 right-10 w-[450px] h-[450px] bg-[#FFA827]/25 rounded-full blur-[130px] pointer-events-none animate-float" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Editorial Section Intro */}
