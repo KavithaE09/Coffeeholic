@@ -102,3 +102,112 @@ body {
 .animate-spin-slow {
   animation: spinSlow 20s linear infinite;
 }
+
+/* ===== LUXURY GRADIENTS & 3D ANIMATIONS ===== */
+
+/* Smooth native scroll fallback */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Shimmer Gold Text */
+@keyframes shimmerGold {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #D49B55 0%,
+    #FFF4D9 25%,
+    #F5C842 50%,
+    #E8DBCE 75%,
+    #D49B55 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerGold 4s linear infinite;
+}
+
+/* 3D Perspective Card Tilt */
+.card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.45s ease, border-color 0.4s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(3deg) rotateY(-2deg) scale(1.015);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.7),
+    0 0 35px -5px rgba(212, 155, 85, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Floating animation */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 6s ease-in-out infinite 2s;
+}
+
+/* Glowing pulse effect */
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.08);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Glassmorphism Luxury Panel */
+.glass-luxury {
+  background: rgba(59, 42, 34, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 155, 85, 0.25);
+}
+
+/* Metallic Gold Gradient Border Effect */
+.gradient-border-gold {
+  position: relative;
+  border-radius: 1rem;
+}
+.gradient-border-gold::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(212, 155, 85, 0.7), rgba(139, 94, 51, 0.2), rgba(212, 155, 85, 0.6));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+

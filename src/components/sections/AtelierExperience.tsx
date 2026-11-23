@@ -92,13 +92,14 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
   const current = moodData[activeMood];
 
   return (
-    <section id="experience" className="relative py-28 sm:py-36 bg-[#F7F2EC] text-[#2C1F18] overflow-hidden">
+    <section id="experience" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EF] via-[#F2E8DC] to-[#EAE0D2] text-[#2C1F18] overflow-hidden">
       {/* Decorative dynamic ambient glow */}
       <div
-        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full blur-[180px] pointer-events-none transition-colors duration-700 ${
-          activeMood === "day" ? "bg-[#D49B55]/12" : "bg-[#8B5E33]/15"
+        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full blur-[180px] pointer-events-none transition-colors duration-700 animate-glow-pulse ${
+          activeMood === "day" ? "bg-[#D49B55]/15" : "bg-[#8B5E33]/20"
         }`}
       />
+      <div className="absolute top-10 right-10 w-[350px] h-[350px] bg-[#D49B55]/10 rounded-full blur-[120px] pointer-events-none animate-float" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Editorial Section Intro */}
@@ -233,7 +234,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
                   return (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-[#FFFFFF] border border-[#E2D5C8] hover:border-[#8B5E33] hover:shadow-[0_4px_18px_rgba(139,94,51,0.12)] transition-all flex flex-col justify-between group shadow-sm"
+                      className="p-3.5 rounded-xl bg-white/90 backdrop-blur-sm border border-[#E2D5C8] hover:border-[#D49B55] hover:shadow-[0_8px_25px_rgba(139,94,51,0.18)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group shadow-sm"
                     >
                       <div className="flex items-center gap-2.5 mb-2">
                         <div className="p-1.5 rounded-lg bg-[#F7F2EC] border border-[#D5C2B0] text-[#8B5E33] group-hover:scale-110 transition-transform">
