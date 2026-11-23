@@ -39,9 +39,6 @@ export default function Collection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#8B5E33] block mb-2 font-semibold">
-              Curated Alchemy
-            </span>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
               {t("collection.title", "The Cafe Collection.")}
             </h2>
@@ -114,11 +111,6 @@ export default function Collection() {
                     className="object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-60" />
-                  
-                  {/* Subtle Top Image Badge */}
-                  <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-mono uppercase tracking-wider text-[#2C1F18] border border-[#D5C2B0]">
-                    {item.category}
-                  </div>
                 </div>
 
                 {/* Product Info */}

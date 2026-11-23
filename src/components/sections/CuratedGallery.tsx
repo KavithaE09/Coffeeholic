@@ -22,9 +22,6 @@ export default function CuratedGallery() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#8B5E33] block mb-2 font-semibold">
-              Visual Archive
-            </span>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
               {t("gallery.title", "Scenes from the Atelier.")}
             </h2>
