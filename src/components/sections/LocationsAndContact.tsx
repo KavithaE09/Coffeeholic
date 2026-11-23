@@ -16,10 +16,10 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
   const location = locationsData[0]; // Only CoffeeHolic Pattaya
 
   return (
-    <section id="locations" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+    <section id="locations" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">
       {/* Background dual glow effects */}
-      <div className="absolute top-1/3 left-10 w-[600px] h-[600px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[150px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
+      <div className="absolute top-1/3 left-10 w-[600px] h-[600px] bg-gradient-to-tr from-[#FFA827]/25 to-[#FFD580]/15 rounded-full blur-[150px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/25 to-[#D46B28]/20 rounded-full blur-[140px] pointer-events-none animate-float" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -31,7 +31,7 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
           className="mb-12 sm:mb-16"
         >
         
-          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711]">
             {t("loc.title", "Visit Our Atelier.")}
           </h2>
           <p className="text-sm text-[#8B5E33] font-mono uppercase tracking-widest mt-3 font-semibold">

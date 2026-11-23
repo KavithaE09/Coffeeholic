@@ -13,17 +13,17 @@ export default function CuratedGallery() {
   const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);
 
   return (
-    <section id="gallery" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+    <section id="gallery" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">
       {/* Dynamic Dual-Color Glowing Orbs */}
-      <div className="absolute top-1/4 left-10 w-[600px] h-[600px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
-      <div className="absolute top-1/2 right-1/4 w-[350px] h-[350px] bg-[#FFA827]/20 rounded-full blur-[120px] pointer-events-none animate-float-delayed" />
+      <div className="absolute top-1/4 left-10 w-[600px] h-[600px] bg-gradient-to-tr from-[#FFA827]/25 to-[#FFD580]/15 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/25 to-[#D46B28]/20 rounded-full blur-[140px] pointer-events-none animate-float" />
+      <div className="absolute top-1/2 right-1/4 w-[350px] h-[350px] bg-[#FFA827]/15 rounded-full blur-[120px] pointer-events-none animate-float-delayed" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711]">
               {t("gallery.title", "Scenes from the Atelier.")}
             </h2>
           </div>

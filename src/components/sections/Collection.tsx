@@ -30,16 +30,16 @@ export default function Collection() {
   const hasMore = filteredItems.length > 6;
 
   return (
-    <section id="collection" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+    <section id="collection" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">
       {/* Dynamic Dual-Color Glowing Orbs */}
-      <div className="absolute top-1/4 right-0 w-[650px] h-[650px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[150px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 left-0 w-[550px] h-[550px] bg-gradient-to-br from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[150px] pointer-events-none animate-float" />
-      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-[#FFA827]/20 rounded-full blur-[130px] pointer-events-none animate-float-delayed" />
+      <div className="absolute top-1/4 right-0 w-[650px] h-[650px] bg-gradient-to-tr from-[#FFA827]/25 to-[#FFD580]/15 rounded-full blur-[150px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 left-0 w-[550px] h-[550px] bg-gradient-to-br from-[#8B5E33]/25 to-[#D46B28]/20 rounded-full blur-[150px] pointer-events-none animate-float" />
+      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-[#FFA827]/15 rounded-full blur-[130px] pointer-events-none animate-float-delayed" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711]">
               {t("collection.title", "The Daily Cafe Menu")}
             </h2>
           </div>

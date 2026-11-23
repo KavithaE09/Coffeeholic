@@ -85,10 +85,10 @@ export default function CinematicReel() {
   };
 
   return (
-    <section id="motion" className="relative py-28 sm:py-36 bg-dual-cream text-[#2C1F18] overflow-hidden">
+    <section id="motion" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">
       {/* Background ambient dual-color glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[160px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-gradient-to-tr from-[#FFA827]/25 to-[#FFD580]/15 rounded-full blur-[160px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/25 to-[#D46B28]/20 rounded-full blur-[140px] pointer-events-none animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -98,11 +98,11 @@ export default function CinematicReel() {
               <Film className="w-4 h-4" />
               <span>{t("reel.badge", "Cinematic Motion Archive")}</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18] leading-[1.15]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711] leading-[1.15]">
               {t("reel.title", "The Craft in Motion.")}
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-[#5A453A] font-light max-w-md leading-relaxed">
+          <p className="text-sm sm:text-base text-[#4F3628] font-normal max-w-md leading-relaxed">
             {t("reel.desc", "Slow down and observe coffee extraction as visual poetry. From 3D bean tumbling to golden crema swirls, witness specialty coffee engineered with Japanese reverence.")}
           </p>
         </div>

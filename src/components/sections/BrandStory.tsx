@@ -8,10 +8,10 @@ export default function BrandStory() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="relative py-24 sm:py-32 bg-dual-cream text-[#2C1F18] overflow-hidden">
+    <section id="about" className="relative py-24 sm:py-32 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">
       {/* Dynamic Dual-Color Glowing Orbs */}
-      <div className="absolute top-10 right-10 w-[550px] h-[550px] bg-gradient-to-tr from-[#FFA827]/30 to-[#FFD580]/20 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute -bottom-10 left-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/30 to-[#D46B28]/25 rounded-full blur-[140px] pointer-events-none animate-float" />
+      <div className="absolute top-10 right-10 w-[550px] h-[550px] bg-gradient-to-tr from-[#FFA827]/25 to-[#FFD580]/15 rounded-full blur-[140px] pointer-events-none animate-glow-pulse" />
+      <div className="absolute -bottom-10 left-10 w-[500px] h-[500px] bg-gradient-to-bl from-[#8B5E33]/25 to-[#D46B28]/20 rounded-full blur-[140px] pointer-events-none animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -52,14 +52,14 @@ export default function BrandStory() {
           </div>
 
           <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18] leading-[1.15]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711] leading-[1.15]">
               {t("story.title", "From Sacred Highlands to Pattaya Shores")}
             </h2>
 
             {/* Elegant Accent Gradient Divider */}
             <div className="w-24 h-[2px] bg-gradient-to-r from-[#D49B55] via-[#8B5E33] to-transparent rounded-full" />
 
-            <div className="space-y-5 text-[#5A453A] font-light text-base sm:text-lg leading-relaxed">
+            <div className="space-y-5 text-[#4F3628] font-normal text-base sm:text-lg leading-relaxed">
               <p>
                 {t("story.p1", "Coffee HOLIC was born from a singular obsession: to liberate specialty coffee from rush culture. Located in Pattaya, Thailand, our atelier is designed as a space of pause.")}
               </p>
