@@ -85,30 +85,30 @@ export default function CinematicReel() {
   };
 
   return (
-    <section id="motion" className="relative py-28 sm:py-36 bg-gradient-to-b from-[#180E09] via-[#2A1A12] to-[#180E09] text-[#FDF9F3] overflow-hidden">
+    <section id="motion" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
       {/* Background ambient light */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[750px] h-[500px] bg-[#D49B55]/15 rounded-full blur-[180px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-[#8B5E33]/20 rounded-full blur-[150px] pointer-events-none animate-float" />
+      <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-[#8B5E33]/15 rounded-full blur-[150px] pointer-events-none animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-[#D49B55] mb-3 font-medium">
+            <div className="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-[#8B5E33] mb-3 font-semibold">
               <Film className="w-4 h-4" />
               <span>{t("reel.badge", "Cinematic Motion Archive")}</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#FDF9F3] leading-[1.15]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18] leading-[1.15]">
               {t("reel.title", "The Craft in Motion.")}
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-[#E8DBCE]/85 font-light max-w-md leading-relaxed">
+          <p className="text-sm sm:text-base text-[#5A453A] font-light max-w-md leading-relaxed">
             {t("reel.desc", "Slow down and observe coffee extraction as visual poetry. From 3D bean tumbling to golden crema swirls, witness specialty coffee engineered with Japanese reverence.")}
           </p>
         </div>
 
         {/* Master Cinema Screen */}
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#382318] to-[#1E110A] border border-[#D49B55]/40 shadow-[0_25px_70px_rgba(0,0,0,0.6)] mb-8">
+        <div className="relative rounded-3xl overflow-hidden bg-black border border-[#D5C2B0] shadow-[0_25px_60px_rgba(44,31,24,0.22)] mb-8">
           <div className="relative aspect-video sm:aspect-[21/9] w-full overflow-hidden bg-black flex items-center justify-center">
             <video
               ref={videoRef}
@@ -173,12 +173,12 @@ export default function CinematicReel() {
                 key={clip.id}
                 onClick={() => setActiveClip(clip)}
                 className={`text-left rounded-2xl p-4 sm:p-5 transition-all duration-300 relative border overflow-hidden group ${isActive
-                    ? "bg-[#523B30] border-[#D49B55] shadow-[0_0_30px_rgba(139,94,51,0.3)]"
-                    : "bg-[#48332A] border-[#C4A77D]/25 hover:border-[#D49B55]/50 hover:bg-[#4E382E]"
+                    ? "bg-white border-[#8B5E33] shadow-[0_10px_30px_rgba(139,94,51,0.18)]"
+                    : "bg-white/80 border-[#D5C2B0] hover:border-[#8B5E33] hover:bg-white"
                   }`}
               >
                 {/* Mini video thumbnail */}
-                <div className="relative aspect-video rounded-xl overflow-hidden mb-3 bg-black border border-white/10">
+                <div className="relative aspect-video rounded-xl overflow-hidden mb-3 bg-black border border-black/10">
                   <video
                     src={clip.src}
                     poster={clip.poster}
@@ -193,17 +193,17 @@ export default function CinematicReel() {
 
                   {/* Active playing indicator */}
                   {isActive && (
-                    <div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#8B5E33]/60 backdrop-blur-md border border-[#D49B55]/50 text-[#FFF9F2] text-[10px] font-mono">
+                    <div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#8B5E33]/85 backdrop-blur-md border border-[#D49B55]/50 text-[#FFF9F2] text-[10px] font-mono">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#D49B55] animate-pulse" />
                       <span>NOW PLAYING</span>
                     </div>
                   )}
                 </div>
 
-                <h4 className="font-serif text-lg sm:text-xl text-[#FDF9F3] font-medium mb-1 group-hover:text-[#D49B55] transition-colors">
+                <h4 className="font-serif text-lg sm:text-xl text-[#2C1F18] font-medium mb-1 group-hover:text-[#8B5E33] transition-colors">
                   {clip.title}
                 </h4>
-                <p className="text-xs text-[#E8DBCE]/80 line-clamp-1">{clip.subtitle}</p>
+                <p className="text-xs text-[#5A453A] line-clamp-1">{clip.subtitle}</p>
 
                 {isActive && (
                   <motion.div

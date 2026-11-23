@@ -30,16 +30,19 @@ export default function Collection() {
   const hasMore = filteredItems.length > 6;
 
   return (
-    <section id="collection" className="relative py-28 sm:py-36 bg-gradient-to-b from-[#180E09] via-[#2D1B13] to-[#180E09] text-[#FDF9F3] overflow-hidden">
+    <section id="collection" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FAF5EE] via-[#EFE2D3] to-[#E3D0BE] text-[#2C1F18] overflow-hidden">
       {/* Ambient background glows with 3D depth */}
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#D49B55]/15 rounded-full blur-[180px] pointer-events-none animate-glow-pulse" />
-      <div className="absolute bottom-10 left-0 w-[500px] h-[500px] bg-[#8B5E33]/25 rounded-full blur-[160px] pointer-events-none animate-float" />
+      <div className="absolute bottom-10 left-0 w-[500px] h-[500px] bg-[#8B5E33]/15 rounded-full blur-[160px] pointer-events-none animate-float" />
       <div className="absolute top-1/2 left-1/3 w-[350px] h-[350px] bg-[#D49B55]/10 rounded-full blur-[140px] pointer-events-none animate-float-delayed" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#FDF9F3]">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#8B5E33] block mb-2 font-semibold">
+              Curated Alchemy
+            </span>
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#2C1F18]">
               {t("collection.title", "The Cafe Collection.")}
             </h2>
           </div>
@@ -54,8 +57,8 @@ export default function Collection() {
                 }}
                 className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                   activeCategory === cat.id
-                    ? "bg-gradient-to-r from-[#8B5E33] via-[#D49B55] to-[#8B5E33] text-[#FFF9F2] font-semibold shadow-[0_4px_20px_rgba(212,155,85,0.45)] border border-[#F5C842]/50 scale-105"
-                    : "glass-luxury text-[#E8DBCE] border border-[#C4A77D]/25 hover:border-[#D49B55]/60 hover:text-white"
+                    ? "bg-gradient-to-r from-[#8B5E33] via-[#D49B55] to-[#8B5E33] text-[#FFF9F2] font-semibold shadow-[0_4px_20px_rgba(139,94,51,0.4)] border border-[#F5C842]/50 scale-105"
+                    : "bg-white/80 text-[#5A453A] border border-[#D5C2B0] hover:border-[#8B5E33] hover:text-[#2C1F18]"
                 }`}
               >
                 {cat.label}
@@ -64,21 +67,21 @@ export default function Collection() {
           </div>
         </div>
 
-        {/* Extra Remedies Add-on Bar with Glassmorphic Luxury Gradient */}
-        <div className="mb-10 p-4 rounded-2xl bg-gradient-to-r from-[#3B2A22]/90 via-[#4A352B]/80 to-[#3B2A22]/90 backdrop-blur-md border border-[#D49B55]/30 shadow-lg flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+        {/* Extra Remedies Add-on Bar with Warm Cream Luxury Style */}
+        <div className="mb-10 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-[#D5C2B0] shadow-sm flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#D49B55] animate-ping" />
-            <span className="uppercase text-[#D49B55] font-semibold tracking-wider">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#8B5E33] animate-ping" />
+            <span className="uppercase text-[#8B5E33] font-semibold tracking-wider">
               Extra Remedies (+฿25 each):
             </span>
           </div>
-          <div className="flex flex-wrap gap-2 text-[#E8DBCE]">
+          <div className="flex flex-wrap gap-2 text-[#5A453A]">
             {extraRemedies.map((remedy, i) => (
               <span
                 key={i}
-                className="px-3 py-1 rounded-full bg-[#251811]/80 border border-[#D49B55]/30 text-[11px] hover:border-[#D49B55] transition-colors"
+                className="px-3 py-1 rounded-full bg-[#FAF5EE] border border-[#D5C2B0] text-[11px] hover:border-[#8B5E33] transition-colors"
               >
-                + {remedy.name} <strong className="text-[#D49B55] ml-1">฿{remedy.priceTHB}</strong>
+                + {remedy.name} <strong className="text-[#8B5E33] ml-1">฿{remedy.priceTHB}</strong>
               </span>
             ))}
           </div>
@@ -100,58 +103,58 @@ export default function Collection() {
                 transition={{ duration: 0.45 }}
                 whileHover={{ y: -6 }}
                 onClick={() => setSelectedProduct(item)}
-                className="card-3d group relative rounded-2xl overflow-hidden bg-gradient-to-b from-[#4A352B] to-[#251811] border border-[#C4A77D]/35 hover:border-[#D49B55] cursor-pointer flex flex-col justify-between"
+                className="card-3d group relative rounded-2xl overflow-hidden bg-white border border-[#D5C2B0] hover:border-[#8B5E33] shadow-[0_12px_35px_rgba(44,31,24,0.08)] hover:shadow-[0_22px_50px_rgba(139,94,51,0.22)] cursor-pointer flex flex-col justify-between"
               >
                 {/* Product Image Container */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#251811]">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#FAF5EE]">
                   <Image
                     src={item.image}
                     alt={item.name}
                     fill
                     className="object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#251811] via-[#251811]/25 to-transparent opacity-90" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-60" />
                   
                   {/* Subtle Top Image Badge */}
-                  <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full glass-luxury text-[10px] font-mono uppercase tracking-wider text-[#E8DBCE] border border-[#C4A77D]/25">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-mono uppercase tracking-wider text-[#2C1F18] border border-[#D5C2B0]">
                     {item.category}
                   </div>
                 </div>
 
                 {/* Product Info */}
-                <div className="p-6 flex flex-col flex-grow justify-between">
+                <div className="p-6 flex flex-col flex-grow justify-between bg-white">
                   <div>
                     <div className="flex items-baseline justify-between gap-2 mb-1.5">
-                      <h3 className="font-serif text-xl sm:text-2xl text-[#FDF9F3] group-hover:text-[#D49B55] transition-colors leading-snug">
+                      <h3 className="font-serif text-xl sm:text-2xl text-[#2C1F18] group-hover:text-[#8B5E33] transition-colors leading-snug">
                         {language === "th" ? item.thaiName : item.name}
                       </h3>
                       <div className="text-right shrink-0">
                         {item.priceHotTHB && item.priceIcedTHB ? (
-                          <div className="text-xs sm:text-sm font-mono text-[#D49B55] font-semibold whitespace-nowrap">
-                            <span className="text-[#E8DBCE]/60 text-[10px]">HOT </span>฿{item.priceHotTHB}
-                            <span className="text-[#C4A77D]/40 mx-1">/</span>
-                            <span className="text-[#E8DBCE]/60 text-[10px]">ICED </span>฿{item.priceIcedTHB}
+                          <div className="text-xs sm:text-sm font-mono text-[#8B5E33] font-semibold whitespace-nowrap">
+                            <span className="text-[#6D5345] text-[10px]">HOT </span>฿{item.priceHotTHB}
+                            <span className="text-[#C4A77D] mx-1">/</span>
+                            <span className="text-[#6D5345] text-[10px]">ICED </span>฿{item.priceIcedTHB}
                           </div>
                         ) : (
-                          <span className="font-mono text-base font-semibold text-[#D49B55]">
+                          <span className="font-mono text-base font-semibold text-[#8B5E33]">
                             ฿{item.priceTHB}
                           </span>
                         )}
                       </div>
                     </div>
 
-                    <p className="text-xs font-mono text-[#C4A77D] tracking-wider mb-2">
+                    <p className="text-xs font-mono text-[#8B5E33] tracking-wider mb-2">
                       {item.origin}
                     </p>
                   </div>
 
                   {/* Clean Card Footer with Details Action */}
-                  <div className="pt-3 border-t border-[#C4A77D]/20 flex items-center justify-between">
-                    <span className="text-[11px] font-mono text-[#E8DBCE]/60 tracking-wider">
+                  <div className="pt-3 border-t border-[#E2D5C8] flex items-center justify-between">
+                    <span className="text-[11px] font-mono text-[#6D5345] tracking-wider">
                       {item.servingTemp === "Both" ? "Hot / Iced" : item.servingTemp}
                     </span>
-                    <span className="text-[11px] text-[#D49B55] font-mono uppercase tracking-wider group-hover:translate-x-1 transition-transform font-semibold">
-                      Details &rarr;
+                    <span className="text-[11px] text-[#8B5E33] font-mono uppercase tracking-wider group-hover:translate-x-1.5 transition-transform font-semibold flex items-center gap-1">
+                      Details <span>&rarr;</span>
                     </span>
                   </div>
                 </div>
