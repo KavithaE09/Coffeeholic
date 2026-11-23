@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --background: #3B2A22;
+  --foreground: #FDF9F3;
+  --color-amber-gold: #D49B55;
+  --color-warm-caramel: #8B5E33;
+  --color-cream: #E8DBCE;
+  --color-card-brown: #4A352B;
+  --color-card-lighter: #563E33;
+  --color-coffee-brown: #684433;
+  --color-muted-gold: #C4A77D;
+  --color-soft-beige: #E2D3C4;
+}
+
+html {
+  background-color: #3B2A22;
+  color: #FDF9F3;
+  overflow-x: hidden;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body {
+  background-color: #3B2A22;
+  color: #FDF9F3;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #8B5E33;
+  color: #FFFFFF;
+}
+
+.font-serif {
+  font-family: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Custom Neon Amber Brand Glows */
+.neon-glow {
+  filter: drop-shadow(0 0 15px rgba(255, 168, 39, 0.6));
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(255, 168, 39, 0.5), 0 0 25px rgba(255, 168, 39, 0.25);
+}
+
+.neon-border {
+  box-shadow: 0 0 15px rgba(255, 168, 39, 0.25), inset 0 0 15px rgba(255, 168, 39, 0.1);
+}
+
+/* Subtle luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1B1511;
+}
+::-webkit-scrollbar-thumb {
+  background: #382A20;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA827;
+}
+
+/* Spin Animations */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
