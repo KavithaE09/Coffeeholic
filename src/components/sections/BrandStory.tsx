@@ -20,7 +20,7 @@ export default function BrandStory() {
               className="relative aspect-[16/11] sm:aspect-[4/3] w-full max-h-[380px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-xl"
             >
               <Image
-                src="/assets/shop-interior.jpg"
+                src="/assets/real/storefront-night.jpg"
                 alt="Coffee HOLIC Cafe & Bar - Pattaya"
                 fill
                 className="object-cover"
@@ -38,7 +38,7 @@ export default function BrandStory() {
               className="hidden sm:block absolute -bottom-5 -right-4 w-36 sm:w-44 aspect-[4/3] rounded-xl overflow-hidden border-2 border-[#8B5E33] shadow-2xl z-10"
             >
               <Image
-                src="/assets/shop-interior.jpg"
+                src="/assets/real/storefront-night.jpg"
                 alt="Coffee HOLIC interior detail"
                 fill
                 className="object-cover object-bottom"
