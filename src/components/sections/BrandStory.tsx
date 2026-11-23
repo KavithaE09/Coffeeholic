@@ -23,7 +23,7 @@ export default function BrandStory() {
                 src="/assets/real/storefront-night.jpg"
                 alt="Coffee HOLIC Cafe & Bar - Pattaya"
                 fill
-                className="object-cover object-bottom"
+                className="object-cover object-center"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#2C1F18]/30 via-transparent to-transparent pointer-events-none" />
@@ -38,10 +38,10 @@ export default function BrandStory() {
               className="hidden sm:block absolute -bottom-6 -right-5 w-44 sm:w-56 aspect-[4/3] rounded-xl overflow-hidden border-2 border-[#8B5E33] shadow-2xl z-10"
             >
               <Image
-                src="/assets/real/logo-glass-crop.jpg"
-                alt="Coffee HOLIC interior detail"
+                src="/assets/real/storefront-night.jpg"
+                alt="Coffee HOLIC shop sign"
                 fill
-                className="object-cover object-bottom"
+                className="object-cover object-center"
               />
             </motion.div>
           </div>
