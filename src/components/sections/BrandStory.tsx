@@ -17,7 +17,7 @@ export default function BrandStory() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative aspect-[4/3] sm:aspect-[3/2] w-full max-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-2xl"
+              className="relative w-full h-[600px] sm:h-[680px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-2xl"
             >
               <Image
                 src="/assets/real/storefront-night.jpg"
