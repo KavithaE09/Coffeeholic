@@ -11,7 +11,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g-interior-bar",
-    title: "Marble Counter & Dining Atelier",
+    title: "Marble Counter & Dining Cafe",
     subtitle: "Sunlit dining room, marble extraction bar, warm chandelier lights, and welcoming seating",
     category: "Interior",
     image: "/assets/cafe6.webp",
@@ -35,7 +35,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g-art-wall",
-    title: "Atelier Culture & Mindful Art",
+    title: "Cafe Culture & Mindful Art",
     subtitle: "Curated framed artwork celebrating coffee contemplation and creative spirit",
     category: "Ambience",
     image: "/assets/cafe 8.webp",

@@ -252,7 +252,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
                 })}
               </div>
 
-              {/* Atelier Walk-in Note */}
+              {/* Cafe Walk-in Note */}
               <div className="pt-4 border-t border-[#D5C2B0] flex items-center justify-between text-xs font-mono text-[#6D5345]">
                 <span>No reservation required for slow bar counter</span>
                 <span className="text-[#8B5E33] font-semibold">Walk-ins welcome • Daily 08:00–Late</span>

@@ -43,7 +43,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "nav.ritual": "Ritual",
     "nav.motion": "Motion",
     "nav.gallery": "Gallery",
-    "nav.ateliers": "Ateliers",
+    "nav.ateliers": "Cafe & Bar",
     
     "nav.reserve_short": "Reserve",
     "nav.location_time": "Pattaya, Thailand (GMT+7)",
@@ -66,7 +66,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "ticker.cold_drip": "COLD DRIP MASTERY",
     "ticker.omakase": "OMAKASE TASTING",
     "ticker.cocktails": "SIGNATURE COCKTAILS",
-    "ticker.atelier": "PATTAYA ATELIER",
+    "ticker.atelier": "PATTAYA CAFE",
     "ticker.microlot": "MICRO-LOT BEANS",
     "ticker.night_salon": "NIGHT SALON",
 
@@ -92,12 +92,12 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "collection.tab_fizzy": "Fizzy Antidote",
     "collection.order_button": "Experience at Bar",
 
-    // Atelier Experience
+    // Cafe Experience
     "exp.badge": "Sensory Transition",
     "exp.section_title": "Day Slow Bar • Night Lounge",
     
-    "exp.title": "The Day Atelier & The Night Sanctuary",
-    "exp.day_title": "Day Atelier",
+    "exp.title": "The Day Cafe & The Night Sanctuary",
+    "exp.day_title": "Day Cafe",
     "exp.day_hours": "08:00 AM – 06:00 PM",
     "exp.day_desc": "Sunlit minimalism, whispering steam wands, and the contemplation of rare origin coffees poured through artisan glassware.",
     "exp.night_title": "Night Sanctuary",
@@ -125,17 +125,17 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "gallery.desc": "A visual curation of intimate spaces, architectural angles, and precision coffee moments in Pattaya.",
 
     // Locations & Contact
-    "loc.title": "Pattaya Atelier & Bar",
+    "loc.title": "Pattaya Cafe & Bar",
     "loc.hours_label": "Opening Hours",
     "loc.hours_val": "Daily: 08:00 AM – Midnight",
     "loc.address_label": "Address",
     "loc.address_val": "353/109 Moo 12 Nong Prue, Bang Lamung District, Pattaya 20150",
-    "loc.call": "Call Atelier",
+    "loc.call": "Call Cafe",
     "loc.directions": "Get Directions",
     "loc.reserve": "Book Table",
 
     // Reservation Modal
-    "modal.title": "Reserve Atelier Experience",
+    "modal.title": "Reserve Cafe Experience",
     "modal.subtitle": "Secure an intimate table or private tasting ritual at Coffee HOLIC Pattaya.",
     "modal.guests": "Guests",
     "modal.date": "Date",
@@ -172,7 +172,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "nav.ritual": "พิธีกรรม",
     "nav.motion": "วิดีโอ",
     "nav.gallery": "แกลเลอรี",
-    "nav.ateliers": "สาขา",
+    "nav.ateliers": "สาขา (Cafe & Bar)",
     "nav.reserve": "จองโต๊ะ",
     "nav.reserve_short": "จอง",
     "nav.location_time": "พัทยา, ประเทศไทย (GMT+7)",
@@ -196,7 +196,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "ticker.cold_drip": "สกัดเย็นระดับมาสเตอร์",
     "ticker.omakase": "โอมากาเสะกาแฟ",
     "ticker.cocktails": "ค็อกเทลสูตรพิเศษ",
-    "ticker.atelier": "สาขาพัทยา",
+    "ticker.atelier": "พัทยา คาเฟ่",
     "ticker.microlot": "เมล็ดกาแฟไมโครล็อต",
     "ticker.night_salon": "บาร์กาแฟยามค่ำคืน",
 
@@ -223,11 +223,11 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "collection.tab_fizzy": "โซดาคลายร้อน (Fizzy Antidote)",
     "collection.order_button": "สั่งได้ที่เคาน์เตอร์บาร์",
 
-    // Atelier Experience
+    // Cafe Experience
     "exp.badge": "สองมิติแห่งรสชาติ",
     "exp.section_title": "สโลว์บาร์กลางวัน • เลานจ์กลางคืน",
     "exp.title": "สตูดิโอกาแฟกลางวันและบาร์ค็อกเทลกลางคืน",
-    "exp.day_title": "กลางวัน: คาเฟ่อาเตอลิเยร์",
+    "exp.day_title": "กลางวัน: คาเฟ่",
     "exp.day_hours": "08:00 – 18:00 น.",
     "exp.day_desc": "แสงแดดอบอุ่น บรรยากาศมินิมอล เสียงไอน้ำนุ่มนวล และกาแฟหายากที่เสิร์ฟในแก้วดีไซน์พิเศษ",
     "exp.night_title": "กลางคืน: เลานจ์มิกโซโลจี",
@@ -256,7 +256,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
 
     // Locations & Contact
     "loc.badge": "พบกับเรา",
-    "loc.title": "พัทยา อาเตอลิเยร์ แอนด์ บาร์",
+    "loc.title": "พัทยา คาเฟ่ แอนด์ บาร์",
     "loc.hours_label": "เวลาทำการ",
     "loc.hours_val": "เปิดทุกวัน: 08:00 – 24:00 น.",
     "loc.address_label": "ที่อยู่",
@@ -303,7 +303,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "nav.ritual": "Ритуал",
     "nav.motion": "Видео",
     "nav.gallery": "Галерея",
-    "nav.ateliers": "Ателье",
+    "nav.ateliers": "Кафе и бар",
     "nav.reserve": "Забронировать",
     "nav.reserve_short": "Бронь",
     "nav.location_time": "Паттайя, Таиланд (GMT+7)",
@@ -327,7 +327,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "ticker.cold_drip": "МАСТЕРСТВО ХОЛОДНОГО ЗАВАРИВАНИЯ",
     "ticker.omakase": "ОМАКАСЕ ДЕГУСТАЦИЯ",
     "ticker.cocktails": "АВТОРСКИЕ КОКТЕЙЛИ",
-    "ticker.atelier": "АТЕЛЬЕ В ПАТТАЙЕ",
+    "ticker.atelier": "КАФЕ В ПАТТАЙЕ",
     "ticker.microlot": "МИКРОЛОТЫ",
     "ticker.night_salon": "НОЧНОЙ САЛОН",
 
@@ -354,11 +354,11 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "collection.tab_fizzy": "Игристые содовые (Fizzy Antidote)",
     "collection.order_button": "Заказать за баром",
 
-    // Atelier Experience
+    // Cafe Experience
     "exp.badge": "Двойственная атмосфера",
     "exp.section_title": "Дневной бар • Ночной лаунж",
-    "exp.title": "Дневное ателье и ночное святилище",
-    "exp.day_title": "Дневное ателье",
+    "exp.title": "Дневное кафе и ночное святилище",
+    "exp.day_title": "Дневное кафе",
     "exp.day_hours": "08:00 – 18:00",
     "exp.day_desc": "Залитый солнцем минимализм, шёпот пара и вдумчивое погружение в редкие сорта кофе из дизайнерской посуды.",
     "exp.night_title": "Ночное святилище",
@@ -387,7 +387,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
 
     // Locations & Contact
     "loc.badge": "Наши локации",
-    "loc.title": "Ателье и бар в Паттайе",
+    "loc.title": "Кафе и бар в Паттайе",
     "loc.hours_label": "Часы работы",
     "loc.hours_val": "Ежедневно: 08:00 – Полночь",
     "loc.address_label": "Адрес",
@@ -458,7 +458,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "ticker.cold_drip": "大师级冷萃",
     "ticker.omakase": "咖啡品鉴会席",
     "ticker.cocktails": "招牌特调鸡尾酒",
-    "ticker.atelier": "芭堤雅工坊",
+    "ticker.atelier": "芭堤雅咖啡馆",
     "ticker.microlot": "微批次珍稀豆",
     "ticker.night_salon": "夜间沙龙",
 
@@ -485,11 +485,11 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "collection.tab_fizzy": "气泡解渴 (Fizzy Antidote)",
     "collection.order_button": "吧台即刻品鉴",
 
-    // Atelier Experience
+    // Cafe Experience
     "exp.badge": "双重意境",
     "exp.section_title": "白昼慢吧 • 夜色酒廊",
-    "exp.title": "白昼工坊与夜幕庇护所",
-    "exp.day_title": "白昼工坊",
+    "exp.title": "白昼咖啡馆与夜幕庇护所",
+    "exp.day_title": "白昼咖啡馆",
     "exp.day_hours": "08:00 – 18:00",
     "exp.day_desc": "阳光静洒的极简空间，蒸汽的轻吟，手作玻璃器皿中的珍稀风土咖啡带来心灵的沉静。",
     "exp.night_title": "夜幕庇护所",
@@ -514,11 +514,11 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     // Gallery
     "gallery.badge": "视觉画廊",
     "gallery.title": "Coffee HOLIC 瞬间",
-    "gallery.desc": "记录芭堤雅工坊的建筑光影、私密空间与咖啡仪式美学。",
+    "gallery.desc": "记录芭堤雅咖啡馆的建筑光影、私密空间与咖啡仪式美学。",
 
     // Locations & Contact
     "loc.badge": "门店指引",
-    "loc.title": "芭堤雅工坊与酒吧",
+    "loc.title": "芭堤雅咖啡馆与酒吧",
     "loc.hours_label": "营业时间",
     "loc.hours_val": "每日：08:00 – 午夜 24:00",
     "loc.address_label": "地址",
@@ -528,7 +528,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "loc.reserve": "预订座位",
 
     // Reservation Modal
-    "modal.title": "预订工坊体验",
+    "modal.title": "预订咖啡体验",
     "modal.subtitle": "在 Coffee HOLIC 芭堤雅预订专属座位或私人品鉴仪式。",
     "modal.guests": "人数",
     "modal.date": "日期",

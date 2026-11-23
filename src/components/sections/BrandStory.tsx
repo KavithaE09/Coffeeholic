@@ -61,7 +61,7 @@ export default function BrandStory() {
 
             <div className="space-y-5 text-[#4F3628] font-normal text-base sm:text-lg leading-relaxed">
               <p>
-                {t("story.p1", "Coffee HOLIC was born from a singular obsession: to liberate specialty coffee from rush culture. Located in Pattaya, Thailand, our atelier is designed as a space of pause.")}
+                {t("story.p1", "Coffee HOLIC was born from a singular obsession: to liberate specialty coffee from rush culture. Located in Pattaya, Thailand, our cafe is designed as a space of pause.")}
               </p>
               <p>
                 {t("story.p2", "Every bean is sourced from single-origin micro-lots nestled in Chiang Mai's mist-covered canopies and world-renowned volcanic terroirs. Hand-roasted in small batches, extracted at precise pressure profiles.")}

@@ -43,7 +43,7 @@ export default function Home() {
       {/* Product Collection & Tasting Flights */}
       <Collection />
 
-      {/* Day vs Night Atelier Experience */}
+      {/* Day vs Night Cafe Experience */}
       <AtelierExperience onOpenReservation={() => handleOpenReservation()} />
 
       {/* Cinematic 3D & Slow-Motion Coffee Reel */}

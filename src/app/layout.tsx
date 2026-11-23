@@ -21,7 +21,7 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://coffeeholic.th"),
-  title: "Coffee HOLIC – Cafe & Bar | Luxury Specialty Coffee Atelier Pattaya",
+  title: "Coffee HOLIC – Cafe & Bar | Luxury Specialty Coffee Cafe Pattaya",
   description:
     "An ultra-premium specialty coffee sanctuary and evening mixology salon in Pattaya, Thailand. Japanese-inspired slow drip, single-origin micro-lots, and artisanal coffee cocktails.",
   keywords: [
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     "Jomtien specialty coffee",
     "Pattaya coffee cocktail lounge",
   ],
-  authors: [{ name: "Coffee HOLIC Atelier" }],
+  authors: [{ name: "Coffee HOLIC Cafe & Bar" }],
   creator: "Coffee HOLIC",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://coffeeholic.th",
     siteName: "Coffee HOLIC – Cafe & Bar",
-    title: "Coffee HOLIC – Cafe & Bar | Luxury Specialty Coffee Atelier",
+    title: "Coffee HOLIC – Cafe & Bar | Luxury Specialty Coffee Cafe & Bar",
     description:
       "A different kind of coffee ritual. Single-origin micro-lots by day, intimate coffee mixology by night in Pattaya.",
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coffee HOLIC – Cafe & Bar | Luxury Coffee Atelier",
+    title: "Coffee HOLIC – Cafe & Bar | Luxury Coffee Cafe & Bar",
     description:
       "A different kind of coffee ritual in Pattaya, Thailand.",
     images: ["/assets/logo/coffeeholic-neon.jpg"],

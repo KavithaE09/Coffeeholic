@@ -32,7 +32,7 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
         >
         
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711]">
-            {t("loc.title", "Visit Our Atelier.")}
+            {t("loc.title", "Visit Our Cafe.")}
           </h2>
           <p className="text-sm text-[#8B5E33] font-mono uppercase tracking-widest mt-3 font-semibold">
             Jomtien, Pattaya — Thailand

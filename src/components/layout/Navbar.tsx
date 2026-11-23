@@ -81,7 +81,7 @@ export default function Navbar({ onOpenReservation }: NavbarProps) {
     { name: t("nav.experience", "Experience"), href: "#experience" },
     { name: t("nav.motion", "Motion"), href: "#motion" },
     { name: t("nav.gallery", "Gallery"), href: "#gallery" },
-    { name: t("nav.ateliers", "Ateliers"), href: "#locations" },
+    { name: t("nav.ateliers", "Cafe & Bar"), href: "#locations" },
   ];
 
   return (

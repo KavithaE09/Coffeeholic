@@ -120,7 +120,7 @@ export default function ReservationModal({
                       <option value="slow-bar">Daytime Pour-Over Tasting Flight (Single Origin)</option>
                       <option value="cocktail-lounge">Evening Coffee Mixology Salon (Twilight Bar)</option>
                       <option value="vip-room">Private Omakase Coffee Ritual (Up to 6 Guests)</option>
-                      <option value="casual-table">Standard Atelier Table Reservation</option>
+                      <option value="casual-table">Standard Cafe Table Reservation</option>
                     </select>
                   </div>
 

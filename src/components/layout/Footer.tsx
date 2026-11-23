@@ -68,7 +68,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-[#48332A] border border-[#C4A77D]/30 flex items-center justify-center text-[#E8DBCE] hover:text-[#D49B55] hover:border-[#D49B55]/50 transition-colors"
-                aria-label="Spotify Atelier Playlist"
+                aria-label="Spotify Cafe Playlist"
               >
                 <Music2 className="w-4 h-4" />
               </a>
@@ -78,7 +78,7 @@ export default function Footer() {
           {/* Column 2: Navigation Links (lg:col-span-3) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-xs uppercase font-mono tracking-[0.2em] text-[#C4A77D]">
-              Atelier Directory
+              Cafe Directory
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#E8DBCE]/85 font-light">
               <li>
@@ -103,7 +103,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#locations" className="hover:text-[#FFA827] transition-colors">
-                  Pattaya Atelier Location
+                  Pattaya Cafe Location
                 </a>
               </li>
             </ul>

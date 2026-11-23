@@ -125,7 +125,7 @@ export default function Hero({ onOpenReservation }: HeroProps) {
               href="#experience"
               className="px-7 py-3.5 rounded-full glass-luxury border border-[#C4A77D]/40 text-[#E8DBCE] hover:text-[#D49B55] hover:border-[#D49B55]/70 font-medium text-xs uppercase tracking-[0.15em] transition-all shadow-lg"
             >
-              Atelier Bar
+              Cafe & Bar
             </motion.a>
           </motion.div>
         </div>
