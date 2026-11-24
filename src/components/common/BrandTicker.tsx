@@ -14,8 +14,8 @@ export default function BrandTicker() {
     t("ticker.specialty", "Specialty Fresh Roast"),
     t("ticker.cold_drip", "Cold Drip Mastery"),
     t("ticker.omakase", "Omakase Tasting"),
-    t("ticker.cocktails", "Signature Cocktails"),
-    t("ticker.night_salon", "Twilight Cocktail Salon"),
+    t("ticker.cocktails", "Signature Brews & Elixirs"),
+    t("ticker.night_salon", "Twilight Coffee Lounge"),
     "Open Daily • 08:00–20:00",
   ];
 

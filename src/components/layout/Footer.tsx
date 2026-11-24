@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#collection" className="hover:text-[#D49B55] transition-colors">
-                  Curated Coffee &amp; Cocktail Menu
+                  Curated Coffee &amp; Beverage Menu
                 </a>
               </li>
               <li>
@@ -115,7 +115,7 @@ export default function Footer() {
               The Coffee HOLIC Gazette
             </h4>
             <p className="text-xs text-[#D9CBB8]/75 font-light leading-relaxed">
-              Receive private invitations to seasonal single-origin micro-lot arrivals, barista omakase sessions, and evening vinyl cocktail nights.
+              Receive private invitations to seasonal single-origin micro-lot arrivals, barista omakase sessions, and evening vinyl lounge nights.
             </p>
 
             {!subscribed ? (

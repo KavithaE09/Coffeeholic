@@ -2,7 +2,7 @@ export interface MenuItem {
   id: string;
   name: string;
   thaiName: string;
-  category: "caffeine" | "iced" | "frappe" | "fizzy" | "signature" | "clouds" | "tea" | "cocktail" | string;
+  category: "caffeine" | "iced" | "frappe" | "fizzy" | "signature" | "clouds" | "tea" | "beverage" | string;
   description?: string;
   notes?: string[];
   roastLevel?: "Light" | "Medium" | "Omni-Roast" | "Dark" | "Medium-Dark" | string;

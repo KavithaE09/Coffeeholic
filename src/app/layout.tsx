@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://coffeeholic.th"),
   title: "Coffee HOLIC – Cafe & Bar | Luxury Specialty Coffee Cafe Pattaya",
   description:
-    "An ultra-premium specialty coffee sanctuary and evening mixology salon in Pattaya, Thailand. Japanese-inspired slow drip, single-origin micro-lots, and artisanal coffee cocktails.",
+    "An ultra-premium specialty coffee sanctuary and evening lounge in Pattaya, Thailand. Japanese-inspired slow drip, single-origin micro-lots, and specialty craft coffee beverages.",
   keywords: [
     "Specialty coffee in Pattaya",
     "Coffee HOLIC Pattaya",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Best coffee experience in Thailand",
     "Coffee HOLIC Cafe and Bar",
     "Jomtien specialty coffee",
-    "Pattaya coffee cocktail lounge",
+    "Pattaya coffee lounge and bar",
   ],
   authors: [{ name: "Coffee HOLIC Cafe & Bar" }],
   creator: "Coffee HOLIC",

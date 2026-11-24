@@ -54,19 +54,19 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
     night: {
       badge: "",
       title: t("exp.night_title", "Intimate Amber Glow & Coffee Mixology"),
-      headline: "Bespoke Cascara Cocktails & Vinyl Sounds",
+      headline: "Bespoke Cascara Elixirs & Vinyl Sounds",
       description: t(
         "exp.night_desc",
         "Warm low-frequency vinyl, bespoke cold-drip mixology, and amber luminescence where coffee transforms into intoxicating twilight elixirs."
       ),
       musicTrack: "Warm Vinyl Soul & Late-Night Downtempo",
       image: "/assets/real/glass-facade-neon.jpg",
-      detailTag: "Hand-Carved Ice • Smoked Cascara Martinis",
+      detailTag: "Hand-Carved Ice • Smoked Cascara Elixirs",
       accent: "#FF8800",
       features: [
         {
           icon: GlassWater,
-          title: "Smoked Cascara Martinis",
+          title: "Smoked Cascara Cold Drip",
           desc: "Specialty cold drip cascara infused with aged botanicals, torched orange peel, and dark cacao.",
         },
         {

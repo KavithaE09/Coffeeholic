@@ -93,7 +93,7 @@ export default function ReservationModal({
                     Experience Coffee HOLIC
                   </h3>
                   <p className="text-xs sm:text-sm text-[#D9CBB8]/75 mt-1 font-light">
-                    {t("modal.subtitle", "your seat at our slow extraction bar or evening cocktail salon.")}
+                    {t("modal.subtitle", "your seat at our slow extraction bar or evening coffee lounge.")}
                   </p>
                 </div>
 
@@ -118,7 +118,7 @@ export default function ReservationModal({
                       className="w-full bg-[#1C1612] border border-[#B69A70]/25 rounded-lg px-3 py-2.5 text-xs sm:text-sm text-[#FDFBF7] focus:border-[#FFA827] focus:outline-none transition-colors"
                     >
                       <option value="slow-bar">Daytime Pour-Over Tasting Flight (Single Origin)</option>
-                      <option value="cocktail-lounge">Evening Coffee Mixology Salon (Twilight Bar)</option>
+                      <option value="cocktail-lounge">Evening Coffee Lounge &amp; Elixirs (Twilight Bar)</option>
                       <option value="vip-room">Private Omakase Coffee Ritual (Up to 6 Guests)</option>
                       <option value="casual-table">Standard Cafe Table Reservation</option>
                     </select>

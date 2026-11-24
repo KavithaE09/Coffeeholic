@@ -40,7 +40,7 @@ export default function Collection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711]">
-              {t("collection.title", "The Daily Cafe Menu")}
+              {t("collection.title", "Single-Origin Brews & Crafted Beverages")}
             </h2>
           </div>
 
