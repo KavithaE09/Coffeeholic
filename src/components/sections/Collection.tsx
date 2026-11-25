@@ -191,7 +191,7 @@ export default function Collection() {
       {/* Product Detail Modal */}
       <AnimatePresence>
         {selectedProduct && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -200,51 +200,50 @@ export default function Collection() {
               className="fixed inset-0 bg-black/80 backdrop-blur-md"
             />
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="relative w-full max-w-2xl bg-[#241C17] border border-[#FFA827]/40 rounded-2xl overflow-hidden shadow-2xl z-10 text-[#FDFBF7] my-8"
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              className="relative w-full max-w-sm bg-[#241C17] border border-[#FFA827]/40 rounded-2xl overflow-hidden shadow-2xl z-10 text-[#FDFBF7]"
             >
-              <div className="relative aspect-[16/9] w-full">
+              <div className="relative aspect-[4/3] w-full">
                 <Image
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#241C17] via-[#241C17]/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#241C17] via-[#241C17]/20 to-transparent" />
                 <button
                   onClick={() => setSelectedProduct(null)}
-                  className="absolute top-4 right-4 p-2 rounded-full bg-black/60 text-white hover:text-[#FFA827] transition-colors"
+                  className="absolute top-3 right-3 w-7 h-7 flex items-center justify-center rounded-full bg-black/60 text-white hover:text-[#FFA827] transition-colors text-sm"
                 >
                   &times;
                 </button>
               </div>
 
-              <div className="p-6 sm:p-8 space-y-4">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <span className="text-xs uppercase font-mono tracking-[0.2em] text-[#FFA827]">
+              <div className="p-4 space-y-2">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <span className="text-[10px] uppercase font-mono tracking-[0.2em] text-[#FFA827]">
                       {selectedProduct.origin}
                     </span>
-                    <h3 className="font-serif text-3xl sm:text-4xl text-[#F4F0E8] mt-1">
+                    <h3 className="font-serif text-xl text-[#F4F0E8] mt-0.5 leading-tight">
                       {getItemName(selectedProduct)}
                     </h3>
-                    <p className="text-xs text-[#B69A70] font-mono mt-1">
+                    <p className="text-[10px] text-[#B69A70] font-mono mt-0.5">
                       {selectedProduct.servingTemp === "Both"
                         ? t("collection.hot_iced_available", "Hot & Iced Available")
                         : `${getServingTemp(selectedProduct.servingTemp)} ${t("collection.served", "Served")}`}
                     </p>
                   </div>
-                  <div className="text-right">
+                  <div className="text-right shrink-0">
                     {selectedProduct.priceHotTHB && selectedProduct.priceIcedTHB ? (
-                      <div className="font-mono text-xl sm:text-2xl font-bold text-[#FFA827]">
-                        <span className="text-xs text-[#D9CBB8]/70 mr-1 font-normal">{t("common.hot", "HOT")}</span>฿{selectedProduct.priceHotTHB}
-                        <span className="mx-2 text-[#FFA827]/40">/</span>
-                        <span className="text-xs text-[#D9CBB8]/70 mr-1 font-normal">{t("common.iced", "ICED")}</span>฿{selectedProduct.priceIcedTHB}
+                      <div className="font-mono text-sm font-bold text-[#FFA827] leading-snug">
+                        <div><span className="text-[9px] text-[#D9CBB8]/70 mr-0.5 font-normal">{t("common.hot", "HOT")}</span>฿{selectedProduct.priceHotTHB}</div>
+                        <div><span className="text-[9px] text-[#D9CBB8]/70 mr-0.5 font-normal">{t("common.iced", "ICED")}</span>฿{selectedProduct.priceIcedTHB}</div>
                       </div>
                     ) : (
-                      <span className="font-mono text-2xl font-bold text-[#FFA827]">
+                      <span className="font-mono text-lg font-bold text-[#FFA827]">
                         ฿{selectedProduct.priceTHB}
                       </span>
                     )}
@@ -252,33 +251,23 @@ export default function Collection() {
                 </div>
 
                 {selectedProduct.description && (
-                  <p className="text-sm text-[#D9CBB8] font-light leading-relaxed">
+                  <p className="text-xs text-[#D9CBB8] font-light leading-relaxed line-clamp-2">
                     {selectedProduct.description}
                   </p>
                 )}
 
                 {selectedProduct.notes && selectedProduct.notes.length > 0 && (
-                  <div className="pt-4 border-t border-white/10 space-y-3">
-                    <h4 className="text-xs uppercase font-mono tracking-widest text-[#B69A70]">
-                      {t("collection.cupping_notes", "Cupping & Sensory Notes")}
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProduct.notes.map((note, idx) => (
-                        <span
-                          key={idx}
-                          className="px-3 py-1 rounded-full text-xs font-mono tracking-wider text-[#FFA827] bg-[#FFA827]/10 border border-[#FFA827]/30"
-                        >
-                          {note}
-                        </span>
-                      ))}
-                    </div>
+                  <div className="pt-2 border-t border-white/10 flex flex-wrap gap-1.5">
+                    {selectedProduct.notes.map((note, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-0.5 rounded-full text-[10px] font-mono tracking-wider text-[#FFA827] bg-[#FFA827]/10 border border-[#FFA827]/30"
+                      >
+                        {note}
+                      </span>
+                    ))}
                   </div>
                 )}
-
-                <div className="pt-4 flex items-center justify-between text-xs font-mono text-[#D9CBB8]/70">
-                  <span>{t("collection.serving_style", "Serving Style")}: {getServingTemp(selectedProduct.servingTemp)}</span>
-                  <span>{t("collection.roast_profile", "Roast Profile")}: {selectedProduct.roastLevel || t("collection.artisanal_blend", "Artisanal Blend")}</span>
-                </div>
               </div>
             </motion.div>
           </div>

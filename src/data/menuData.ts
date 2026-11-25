@@ -5,17 +5,7 @@ export interface ExtraRemedy {
   priceTHB: number;
 }
 
-export const extraRemedies: ExtraRemedy[] = [
-  { name: "Extra Shot", priceTHB: 25 },
-  { name: "Oat Milk", priceTHB: 25 },
-  { name: "Pistachio Milk", priceTHB: 25 },
-  { name: "Protein", priceTHB: 25 },
-  { name: "Non-Fat Milk", priceTHB: 25 },
-  { name: "Red Beans", priceTHB: 25 },
-];
-
 export const menuItems: MenuItem[] = [
-  // ── 1. CAFFEINE STIMULANTS ──────────────────────────────────────────
   {
     id: "espresso",
     name: "Espresso",
@@ -367,20 +357,7 @@ export const menuItems: MenuItem[] = [
     isPopular: false,
     servingTemp: "Frappe",
   },
-  {
-    id: "traditional-healing-thai-tea",
-    name: "Traditional Healing Thai Tea",
-    thaiName: "ชาไทย ปั่น",
-    category: "frappe",
-    description:
-      "Signature spiced Thai tea blended into an ultra-creamy frosty frappe. Aromatic, nostalgic, and deliciously refreshing.",
-    notes: ["Thai Spices", "Sweet Milk", "Frosty Blend"],
-    origin: "Fusion Frappe",
-    priceTHB: 105,
-    image: "/assets/menu/frappe-latte-dose.jpg",
-    isPopular: true,
-    servingTemp: "Frappe",
-  },
+  
   {
     id: "mocha-overdose",
     name: "Mocha Overdose",

@@ -14,7 +14,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Artisan Glass Typography & Lounge",
     subtitle: "Hand-painted gold typography and warm interior ambiance visible through the glass facade",
     category: "Interior",
-    image: "/assets/real/glass-typography.jpg",
+    image: "/assets/cafe6.webp",
     aspect: "portrait"
   },
   {
