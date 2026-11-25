@@ -105,9 +105,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
         {/* Editorial Section Intro */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#8B5E33] block mb-2 font-semibold">
-              {t("exp.badge", "Sensory Transition")}
-            </span>
+            
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711]">
               {t("exp.section_title", "Day Slow Bar • Night Lounge.")}
             </h2>
@@ -153,7 +151,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
           >
             {/* Cinematic Image Side with Parallax & Audio Badge */}
             <div className="lg:col-span-7 relative">
-              <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-xl">
+              <div className="relative aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)]">
                 <Image
                   src={current.image}
                   alt={current.title}
@@ -171,43 +169,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
                 </div>
 
                 {/* Bottom Soundwave & Vinyl Player Badge */}
-                <div className="absolute bottom-4 left-4 right-4 p-3 sm:p-4 rounded-xl bg-[#2C1F18]/90 backdrop-blur-md border border-[#D5C2B0]/30 flex items-center justify-between text-xs text-white">
-                  <div className="flex items-center gap-3">
-                    <Disc3 className="w-5 h-5 text-[#D49B55] animate-spin-slow shrink-0" />
-                    <div>
-                      <span className="font-mono text-[10px] uppercase tracking-wider text-[#D49B55] block">
-                        Now Playing • Vinyl Acoustics
-                      </span>
-                      <span className="font-serif text-xs sm:text-sm text-[#FDF9F3] font-medium">
-                        {current.musicTrack}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Equalizer Soundwave Animation */}
-                  <div className="flex items-end gap-1 h-4 pr-1">
-                    <motion.span
-                      animate={{ height: ["40%", "100%", "50%", "80%", "40%"] }}
-                      transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
-                      className="w-1 bg-[#D49B55] rounded-full"
-                    />
-                    <motion.span
-                      animate={{ height: ["80%", "30%", "100%", "40%", "80%"] }}
-                      transition={{ repeat: Infinity, duration: 0.9, ease: "easeInOut" }}
-                      className="w-1 bg-[#D49B55] rounded-full"
-                    />
-                    <motion.span
-                      animate={{ height: ["30%", "90%", "40%", "100%", "30%"] }}
-                      transition={{ repeat: Infinity, duration: 1.4, ease: "easeInOut" }}
-                      className="w-1 bg-[#D49B55] rounded-full"
-                    />
-                    <motion.span
-                      animate={{ height: ["60%", "20%", "80%", "30%", "60%"] }}
-                      transition={{ repeat: Infinity, duration: 1.1, ease: "easeInOut" }}
-                      className="w-1 bg-[#D49B55] rounded-full"
-                    />
-                  </div>
-                </div>
+            
               </div>
             </div>
 
@@ -254,8 +216,8 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
 
               {/* Cafe Walk-in Note */}
               <div className="pt-4 border-t border-[#D5C2B0] flex items-center justify-between text-xs font-mono text-[#6D5345]">
-                <span>No reservation required for slow bar counter</span>
-                <span className="text-[#8B5E33] font-semibold">Walk-ins welcome • Daily 08:00–Late</span>
+                <span>No reservation required for slow bar counter </span>
+                <span className="text-[#8B5E33] font-semibold">Walk-ins welcome</span>
               </div>
             </div>
           </motion.div>

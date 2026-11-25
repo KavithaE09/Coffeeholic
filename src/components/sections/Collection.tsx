@@ -63,27 +63,6 @@ export default function Collection() {
             ))}
           </div>
         </div>
-
-        {/* Extra Remedies Add-on Bar with Warm Cream Luxury Style */}
-        <div className="mb-10 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-[#D5C2B0] shadow-sm flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#8B5E33] animate-ping" />
-            <span className="uppercase text-[#8B5E33] font-semibold tracking-wider">
-              Extra Remedies (+฿25 each):
-            </span>
-          </div>
-          <div className="flex flex-wrap gap-2 text-[#5A453A]">
-            {extraRemedies.map((remedy, i) => (
-              <span
-                key={i}
-                className="px-3 py-1 rounded-full bg-[#FAF5EE] border border-[#D5C2B0] text-[11px] hover:border-[#8B5E33] transition-colors"
-              >
-                + {remedy.name} <strong className="text-[#8B5E33] ml-1">฿{remedy.priceTHB}</strong>
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Product Cards Grid with 3D Tilt and Luxury Card Elevation */}
         <motion.div
           layout

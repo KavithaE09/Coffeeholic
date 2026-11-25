@@ -93,7 +93,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     "collection.order_button": "Experience at Bar",
 
     // Cafe Experience
-    "exp.badge": "Sensory Transition",
+    
     "exp.section_title": "Day Slow Bar • Night Lounge",
     
     "exp.title": "The Day Cafe & The Night Sanctuary",

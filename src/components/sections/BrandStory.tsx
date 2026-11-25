@@ -21,7 +21,7 @@ export default function BrandStory() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="card-3d relative w-full h-[480px] sm:h-[540px] lg:h-[580px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_25px_60px_rgba(44,31,24,0.22),0_0_40px_rgba(212,155,85,0.2)]"
+              className="card-3d relative w-full h-[480px] sm:h-[540px] lg:h-[620px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_25px_60px_rgba(44,31,24,0.22),0_0_40px_rgba(212,155,85,0.2)]"
             >
               <Image
                 src="/assets/real/storefront.jpeg"
