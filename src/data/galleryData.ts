@@ -11,42 +11,42 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g-interior-bar",
-    title: "Evening Bar & Signature Serve",
-    subtitle: "Chilled crystal glassware served on a crocheted coaster at our warm wooden bar counter",
+    title: "Artisan Glass Typography & Lounge",
+    subtitle: "Hand-painted gold typography and warm interior ambiance visible through the glass facade",
     category: "Interior",
-    image: "/assets/real/bar-counter-evening.jpg",
+    image: "/assets/real/glass-typography.jpg",
     aspect: "portrait"
   },
   {
     id: "g-espresso-craft",
-    title: "Curated Evening Bar Shelf",
-    subtitle: "Fine curated spirits and warm ambient lighting lining the timber wall shelves",
+    title: "Cafe Culture & Mindful Art",
+    subtitle: "Curated framed artwork celebrating coffee contemplation and creative spirit",
     category: "Craft",
-    image: "/assets/real/bar-shelf-night.jpg",
+    image: "/assets/cafe 8.webp",
     aspect: "portrait"
   },
   {
     id: "g-glass-reflection",
-    title: "Twilight Reflection & Lounge Sanctuary",
-    subtitle: "Artisan gold typography and amber glow reflecting across the leather lounge seats",
+    title: "Signature Printed Menu & Table",
+    subtitle: "Our curated daily cafe menu presented on warm timber dining tables",
     category: "Interior",
-    image: "/assets/real/glass-facade-neon.jpg",
+    image: "/assets/real/table-menu.jpg",
     aspect: "portrait"
   },
   {
     id: "g-art-wall",
-    title: "Iced Lemon Tea on Signature Tray",
-    subtitle: "Freshly brewed iced lemon tea garnished with citrus, served on a brushed steel Coffee HOLIC tray",
+    title: "Handcrafted 3D Amber Neon Sign",
+    subtitle: "Sculptural acrylic and warm luminescence crowning the entrance of Coffee HOLIC Pattaya",
     category: "Ambience",
-    image: "/assets/real/iced-lemon-tea-tray.jpg",
+    image: "/assets/cafe 9.webp",
     aspect: "portrait"
   },
   {
     id: "g-neon-craft",
-    title: "Ceremonial Iced Matcha Latte",
-    subtitle: "Layered Kyoto Uji green tea over chilled milk topped with vibrant edible blossoms",
+    title: "Barista Craft & Pour-Over Station",
+    subtitle: "Hand-crafted specialty brews prepared with Japanese slow-bar precision",
     category: "Craft",
-    image: "/assets/real/iced-matcha-latte-tray.jpg",
+    image: "/assets/cafe 4.webp",
     aspect: "portrait"
   }
 ];

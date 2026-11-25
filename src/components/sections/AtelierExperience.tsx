@@ -57,7 +57,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
         "exp.night_desc",
         "Warm low-frequency vinyl, bespoke cold-drip mixology, and amber luminescence where coffee transforms into intoxicating twilight elixirs."
       ),
-      image: "/assets/real/chain-lamp-lounge.jpg",
+      image: "/assets/real/glass-facade-neon.jpg",
       detailTag: "Hand-Carved Ice • Smoked Cascara Elixirs",
       accent: "#FF8800",
       features: [

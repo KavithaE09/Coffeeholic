@@ -19,11 +19,23 @@ export default function Collection() {
     { id: "iced", label: t("collection.tab_iced", "Daily Dose of Iced") },
     { id: "frappe", label: t("collection.tab_frappe", "First Aid Fusion Frappe") },
     { id: "fizzy", label: t("collection.tab_fizzy", "Fizzy Antidote") },
+    { id: "bar", label: t("collection.tab_bar", "Evening Bar") },
+  ];
+
+  const featuredRealIds = [
+    "lemon-tea",
+    "matcha-latte",
+    "botanical-tonic-serve",
+    "twilight-lounge-reserve",
+    "craft-spirits-selection",
   ];
 
   const filteredItems =
     activeCategory === "all"
-      ? menuItems
+      ? [
+          ...menuItems.filter((item) => featuredRealIds.includes(item.id)),
+          ...menuItems.filter((item) => !featuredRealIds.includes(item.id)),
+        ]
       : menuItems.filter((item) => item.category === activeCategory);
 
   const displayedItems = isExpanded ? filteredItems : filteredItems.slice(0, 6);
