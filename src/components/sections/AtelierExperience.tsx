@@ -22,7 +22,6 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
         "exp.day_desc",
         "Sunlit minimalism, whispering steam wands, and the contemplation of rare origin coffees poured through artisan glassware."
       ),
-      musicTrack: t("exp.day_music", "Lo-Fi Beats & Ambient Acoustic Jazz"),
       image: "/assets/cafe6.webp",
       detailTag: "Hasami Ceramics • 92.4°C Micro-Pour",
       accent: "#FFA827",
@@ -58,8 +57,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
         "exp.night_desc",
         "Warm low-frequency vinyl, bespoke cold-drip mixology, and amber luminescence where coffee transforms into intoxicating twilight elixirs."
       ),
-      musicTrack: t("exp.night_music", "Warm Vinyl Soul & Late-Night Downtempo"),
-      image: "/assets/real/storefront-night.jpg",
+      image: "/assets/real/chain-lamp-lounge.jpg",
       detailTag: "Hand-Carved Ice • Smoked Cascara Elixirs",
       accent: "#FF8800",
       features: [

@@ -11,18 +11,18 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g-interior-bar",
-    title: "Marble Counter & Dining Cafe",
-    subtitle: "Sunlit dining room, marble extraction bar, warm chandelier lights, and welcoming seating",
+    title: "Evening Bar & Signature Serve",
+    subtitle: "Chilled crystal glassware served on a crocheted coaster at our warm wooden bar counter",
     category: "Interior",
-    image: "/assets/cafe6.webp",
+    image: "/assets/real/bar-counter-evening.jpg",
     aspect: "portrait"
   },
   {
     id: "g-espresso-craft",
-    title: "Precision Chrome Extraction",
-    subtitle: "Single-origin espresso extracted on manual chrome group heads with digital gram calibration",
+    title: "Curated Evening Bar Shelf",
+    subtitle: "Fine curated spirits and warm ambient lighting lining the timber wall shelves",
     category: "Craft",
-    image: "/assets/cafe 1.webp",
+    image: "/assets/real/bar-shelf-night.jpg",
     aspect: "portrait"
   },
   {
@@ -35,18 +35,18 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g-art-wall",
-    title: "Cafe Culture & Mindful Art",
-    subtitle: "Curated framed artwork celebrating coffee contemplation and creative spirit",
+    title: "Iced Lemon Tea on Signature Tray",
+    subtitle: "Freshly brewed iced lemon tea garnished with citrus, served on a brushed steel Coffee HOLIC tray",
     category: "Ambience",
-    image: "/assets/cafe 8.webp",
+    image: "/assets/real/iced-lemon-tea-tray.jpg",
     aspect: "portrait"
   },
   {
     id: "g-neon-craft",
-    title: "Handcrafted 3D Amber Neon Sign",
-    subtitle: "Sculptural acrylic and warm luminescence crowning the entrance of Coffee HOLIC Pattaya",
+    title: "Ceremonial Iced Matcha Latte",
+    subtitle: "Layered Kyoto Uji green tea over chilled milk topped with vibrant edible blossoms",
     category: "Craft",
-    image: "/assets/cafe 9.webp",
+    image: "/assets/real/iced-matcha-latte-tray.jpg",
     aspect: "portrait"
   }
 ];

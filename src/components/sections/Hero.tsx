@@ -57,7 +57,7 @@ export default function Hero({ onOpenReservation }: HeroProps) {
             muted
             playsInline
             onEnded={handleNextVideo}
-            poster="/assets/real/storefront-night.jpg"
+            poster="/assets/real/storefront-entry.jpg"
             className="w-full h-full object-cover object-right md:object-center filter brightness-[0.72] contrast-[1.08] saturate-[1.1] scale-100 sm:scale-[0.98] lg:scale-95"
           >
             <source src={heroVideos[currentVideoIndex].src} type="video/mp4" />

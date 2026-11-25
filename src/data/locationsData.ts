@@ -24,7 +24,7 @@ export const locationsData: LocationDetail[] = [
       "Fresh Espresso Machine & Pour-Over Rituals",
       "Comfort Food, Fusion Frappes & Signature Pastries"
     ],
-    image: "/assets/real/storefront-night.jpg",
+    image: "/assets/real/storefront-entry.jpg",
     mapEmbedUrl: "https://maps.google.com/maps?q=353/109%20Nong%20Prue%20Bang%20Lamung%20Chon%20Buri%2020150&t=&z=15&ie=UTF8&iwloc=&output=embed",
     directGoogleMapsUrl: "https://share.google/wxRofuOiH8JTqgQco"
   }

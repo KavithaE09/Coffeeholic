@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { locationsData } from "@/data/locationsData";
 import { MapPin, Clock, Phone, Mail, ExternalLink, Calendar } from "lucide-react";
 import { InstagramIcon } from "@/components/common/BrandIcons";
-import MagneticButton from "@/components/common/MagneticButton";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface LocationsAndContactProps {
@@ -13,7 +12,7 @@ interface LocationsAndContactProps {
 
 export default function LocationsAndContact({ onOpenReservation }: LocationsAndContactProps) {
   const { t } = useLanguage();
-  const location = locationsData[0]; // Only CoffeeHolic Pattaya
+  const location = locationsData[0];
 
   return (
     <section id="locations" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">

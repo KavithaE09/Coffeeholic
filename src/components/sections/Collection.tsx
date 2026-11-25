@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { menuItems, extraRemedies } from "@/data/menuData";
+import { menuItems } from "@/data/menuData";
 import { MenuItem } from "@/types";
 import { useLanguage } from "@/context/LanguageContext";
 

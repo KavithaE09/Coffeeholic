@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Play, Pause, Volume2, VolumeX, Film, Maximize2 } from "lucide-react";
+import { motion } from "framer-motion";
+import { Play, Pause, Volume2, VolumeX, Maximize2 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface VideoClip {
