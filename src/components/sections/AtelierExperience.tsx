@@ -170,10 +170,6 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
             {/* Narrative & Rich Feature Cards Grid */}
             <div className="lg:col-span-5 space-y-6">
               <div>
-                <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#8B5E33] font-semibold">
-                  {current.badge}
-                </span>
-
                 <h3 className="font-serif text-3xl sm:text-4xl text-[#2C1F18] leading-tight mt-1 mb-2 font-normal">
                   {current.title}
                 </h3>
