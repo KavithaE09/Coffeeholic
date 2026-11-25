@@ -35,18 +35,18 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g-art-wall",
-    title: "Handcrafted 3D Amber Neon Sign",
-    subtitle: "Sculptural acrylic and warm luminescence crowning the entrance of Coffee HOLIC Pattaya",
+    title: "Cafe Entrance & Welcome Terrace",
+    subtitle: "Warm welcoming entrance and sidewalk seating in Jomtien, Pattaya",
     category: "Ambience",
-    image: "/assets/cafe 9.webp",
+    image: "/assets/real/storefront-entry.jpg",
     aspect: "portrait"
   },
   {
     id: "g-neon-craft",
-    title: "Barista Craft & Pour-Over Station",
-    subtitle: "Hand-crafted specialty brews prepared with Japanese slow-bar precision",
+    title: "Barista Craft & Extraction Bar",
+    subtitle: "Precision espresso extraction and handcrafted specialty coffee",
     category: "Craft",
-    image: "/assets/cafe 4.webp",
+    image: "/assets/cafe 1.webp",
     aspect: "portrait"
   }
 ];

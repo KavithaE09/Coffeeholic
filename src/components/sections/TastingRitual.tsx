@@ -28,7 +28,7 @@ export default function TastingRitual() {
       title: t("ritual.step1_title", "Calibration & Dry Aroma"),
       subtitle: "Micrometer precision grinding & bean awakening",
       description: t("ritual.step1_desc", "Every single origin is calibrated daily based on local ambient humidity and barometric pressure. Whole beans are ground on customized Japanese titanium flat burrs to an exact 420-micron distribution. The guest is invited to inhale the dry aromatics before a single drop of water touches the grounds."),
-      image: "/assets/cafe 7.webp",
+      image: "/assets/cafe 1.webp",
       metrics: [
         { label: "Dosage", value: "18.5g ± 0.05g" },
         { label: "Burr Alignment", value: "420 μm Precision" },
@@ -42,7 +42,7 @@ export default function TastingRitual() {
       title: t("ritual.step2_title", "The Controlled Pulse Bloom"),
       subtitle: "92.4°C soft mineral water through artisan ceramics",
       description: t("ritual.step2_desc", "Reverse-osmosis water remineralized with magnesium and calcium is heated precisely to 92.4°C. A 45-second bloom awakens volatile esters, followed by two concentric laminar pours through hand-thrown Japanese ceramic drippers to extract crystalline sweetness without harsh tannins."),
-      image: "/assets/cafe 4.webp",
+      image: "/assets/cafe6.webp",
       metrics: [
         { label: "Water Temperature", value: "92.4°C" },
         { label: "Bloom Duration", value: "45 Seconds" },
@@ -56,7 +56,7 @@ export default function TastingRitual() {
       title: t("ritual.step3_title", "Three-Stage Temperature Flight"),
       subtitle: "Tasting notes unfold as the beverage cools",
       description: t("ritual.step3_desc", "Served in dual-walled borosilicate sensory carafes. Our baristas guide you through three distinct temperature phases: initial warmth highlights bright bergamot and jasmine, cooling reveals sweet stone fruit and wild honey, and room temperature settles into velvety cacao and black tea."),
-      image: "/assets/cafe 10.webp",
+      image: "/assets/cafe 8.webp",
       metrics: [
         { label: "Thermal Stages", value: "Hot • Warm • Ambient" },
         { label: "SCA Benchmark", value: "88+ Specialty" },

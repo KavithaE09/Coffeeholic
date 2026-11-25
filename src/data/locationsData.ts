@@ -9,7 +9,7 @@ export const locationsData: LocationDetail[] = [
     address: "353/109 ม.12 หนองปรือ (Nong Prue), Bang Lamung District",
     district: "Jomtien / Nong Prue",
     city: "Chon Buri 20150, Thailand",
-    hours: "Open Daily: 08:00 AM – 08:00 PM (Specialty Fresh Coffee & Bar)",
+    hours: "Open Daily: 09:00 AM – 07:00 PM (Specialty Fresh Coffee & Bar)",
     phone: "+66 90 253 6659",
     email: "coffeeholic.pattaya@gmail.com",
     instagram: "@coffeeholic.pattaya",

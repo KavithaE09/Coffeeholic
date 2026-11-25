@@ -39,7 +39,6 @@ export default function CinematicReel() {
         "Extracted under 92.4°C thermal stability. Thick golden hazelnut crema coalescing into an unctuous, syrupy ristretto stream with velvet mouthfeel."
       ),
       src: "/assets/videos/espresso-extraction.mp4",
-      poster: "/assets/cafe 1.webp",
     },
     {
       id: "iced-swirl",
@@ -50,7 +49,6 @@ export default function CinematicReel() {
         "Our signature Pattaya afternoon ritual: slow-dripped single origin cascara and espresso swirling into chilled organic milk, creating hypnotic marble clouds."
       ),
       src: "/assets/videos/iced-coffee-swirl.mp4",
-      poster: "/assets/cafe2.webp",
     },
   ];
 
