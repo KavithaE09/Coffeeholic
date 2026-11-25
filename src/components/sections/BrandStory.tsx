@@ -32,23 +32,6 @@ export default function BrandStory() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#2C1F18]/40 via-transparent to-transparent pointer-events-none" />
             </motion.div>
-
-            {/* Overlapping Smaller Detail Image Card with Floating 3D Feel */}
-            <motion.div
-              initial={{ opacity: 0, x: 20, y: 10 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="animate-float hidden sm:block absolute -bottom-6 -right-5 w-44 sm:w-56 aspect-[4/3] rounded-xl overflow-hidden border-2 border-[#D49B55] shadow-[0_20px_45px_rgba(0,0,0,0.35)] z-10"
-            >
-              <Image
-                src="/assets/cafe.jpeg"
-                alt="Coffee HOLIC shop sign"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-            </motion.div>
           </div>
 
           <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
