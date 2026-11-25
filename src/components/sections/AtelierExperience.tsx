@@ -150,13 +150,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
           >
             {/* Cinematic Image Side */}
             <div className="lg:col-span-7 relative">
-              <div
-                className={`relative rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)] ${
-                  activeMood === "night"
-                    ? "aspect-[3/4] w-full max-w-[460px] mx-auto"
-                    : "aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px]"
-                }`}
-              >
+              <div className="relative aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)]">
                 <Image
                   src={current.image}
                   alt={current.title}
