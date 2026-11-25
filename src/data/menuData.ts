@@ -20,6 +20,8 @@ export const menuItems: MenuItem[] = [
     id: "espresso",
     name: "Espresso",
     thaiName: "เอสเพรสโซ่",
+    ruName: "Эспрессо",
+    zhName: "浓缩咖啡",
     category: "caffeine",
     description:
       "Pure single-origin shot extracted with precision. Rich golden crema, bold dark chocolate depth, and a lingering roasted finish.",
@@ -36,6 +38,8 @@ export const menuItems: MenuItem[] = [
     id: "americano",
     name: "Americano",
     thaiName: "อเมริกาโน่",
+    ruName: "Американо",
+    zhName: "美式咖啡",
     category: "caffeine",
     description:
       "Freshly pulled espresso diluted with hot or cold filtered water. Clean, smooth, and deeply satisfying.",
@@ -53,6 +57,8 @@ export const menuItems: MenuItem[] = [
     id: "orange-americano",
     name: "Orange Americano",
     thaiName: "อเมริกาโน่ ส้มสด",
+    ruName: "Апельсиновый американо",
+    zhName: "鲜橙美式",
     category: "caffeine",
     description:
       "CoffeeHolic signature: double espresso poured over freshly squeezed cold orange juice. Citrus brightness meets roasted depth.",
@@ -69,6 +75,8 @@ export const menuItems: MenuItem[] = [
     id: "coconut-americano",
     name: "Coconut Americano",
     thaiName: "อเมริกาโน่ มะพร้าวสด",
+    ruName: "Кокосовый американо",
+    zhName: "生椰美式",
     category: "caffeine",
     description:
       "Pure young coconut water topped with freshly extracted ristretto. Natural tropical sweetness balanced with bold roast intensity.",
@@ -85,6 +93,8 @@ export const menuItems: MenuItem[] = [
     id: "latte",
     name: "Latte",
     thaiName: "ลาเต้",
+    ruName: "Латте",
+    zhName: "拿铁咖啡",
     category: "caffeine",
     description:
       "Silkily textured steamed milk poured over freshly extracted espresso. Smooth, creamy mouthfeel with gentle caramel sweetness.",
@@ -102,6 +112,8 @@ export const menuItems: MenuItem[] = [
     id: "cappuccino",
     name: "Cappuccino",
     thaiName: "คาปูชิโน่",
+    ruName: "Капучино",
+    zhName: "卡布奇诺",
     category: "caffeine",
     description:
       "Classic Italian-style with equal parts espresso, steamed milk, and thick velvety foam. Bold and beautifully balanced.",
@@ -119,6 +131,8 @@ export const menuItems: MenuItem[] = [
     id: "mocha",
     name: "Mocha",
     thaiName: "โมคค่า",
+    ruName: "Мокка",
+    zhName: "摩卡咖啡",
     category: "caffeine",
     description:
       "Rich espresso blended with premium dark chocolate sauce and steamed milk. Indulgent, warming, and deeply comforting.",
@@ -136,6 +150,8 @@ export const menuItems: MenuItem[] = [
     id: "caramel-macchiato",
     name: "Caramel Macchiato",
     thaiName: "คาราเมล มัคคิอาโต้",
+    ruName: "Карамельный макиато",
+    zhName: "焦糖玛奇朵",
     category: "caffeine",
     description:
       "Layered espresso with fragrant vanilla milk and artisan dark caramel glaze. Elegantly sweet with a bold espresso finish.",
@@ -155,6 +171,8 @@ export const menuItems: MenuItem[] = [
     id: "lemon-tea",
     name: "Lemon Tea",
     thaiName: "เลมอนที",
+    ruName: "Чай с лимоном",
+    zhName: "柠檬红茶",
     category: "iced",
     description:
       "Refreshing chilled tea brewed to perfection, brightened with fresh lemon juice and natural sweetness.",
@@ -170,6 +188,8 @@ export const menuItems: MenuItem[] = [
     id: "thai-tea",
     name: "Thai Tea",
     thaiName: "ชาไทย",
+    ruName: "Тайский чай",
+    zhName: "泰式奶茶",
     category: "iced",
     description:
       "Classic Thai-style orange-hued spiced tea blended with creamy condensed milk. Rich, aromatic, and authentically Thai.",
@@ -185,6 +205,8 @@ export const menuItems: MenuItem[] = [
     id: "cocoa",
     name: "Cocoa",
     thaiName: "โกโก้",
+    ruName: "Какао",
+    zhName: "浓醇可可",
     category: "iced",
     description:
       "Premium Belgian cocoa blended with chilled milk. Smooth, rich chocolate flavour in every sip.",

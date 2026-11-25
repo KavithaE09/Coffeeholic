@@ -151,14 +151,25 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
           >
             {/* Cinematic Image Side with Parallax & Audio Badge */}
             <div className="lg:col-span-7 relative">
-              <div className="relative aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)]">
+              <div className="relative aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] bg-[#1C120C] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)]">
+                {activeMood === "night" && (
+                  <Image
+                    src={current.image}
+                    alt=""
+                    fill
+                    aria-hidden="true"
+                    className="object-cover object-center blur-2xl scale-110 opacity-50 pointer-events-none"
+                  />
+                )}
                 <Image
                   src={current.image}
                   alt={current.title}
                   fill
-                  className="object-cover object-center filter contrast-105 brightness-95"
+                  className={`${
+                    activeMood === "night" ? "object-contain" : "object-cover"
+                  } object-center filter contrast-105 brightness-95 relative z-10`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-75 z-10 pointer-events-none" />
 
                 {/* Top Timing Badge */}
                 <div className="absolute top-4 left-4">
