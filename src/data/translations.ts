@@ -117,8 +117,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     // Reel
    
     "reel.title": "Witness The Craft in Motion",
-    "reel.desc": "Immerse yourself in our cinematic slow-motion world of golden extractions, cascading foam, and artisanal precision.",
-
+    
     // Gallery
     
     "gallery.title": "Moments at Coffee HOLIC",
@@ -127,7 +126,7 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     // Locations & Contact
     "loc.title": "Pattaya Cafe & Bar",
     "loc.hours_label": "Opening Hours",
-    "loc.hours_val": "Daily: 08:00 AM – Midnight",
+    "loc.hours_val": "Daily: 09:00 AM - 07:00 PM",
     "loc.address_label": "Address",
     "loc.address_val": "353/109 Moo 12 Nong Prue, Bang Lamung District, Pattaya 20150",
     "loc.call": "Call Cafe",

@@ -2,6 +2,8 @@ export interface MenuItem {
   id: string;
   name: string;
   thaiName: string;
+  ruName?: string;
+  zhName?: string;
   category: "caffeine" | "iced" | "frappe" | "fizzy" | "signature" | "clouds" | "tea" | "beverage" | string;
   description?: string;
   notes?: string[];

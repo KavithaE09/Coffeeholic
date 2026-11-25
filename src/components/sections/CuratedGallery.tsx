@@ -65,10 +65,10 @@ export default function CuratedGallery() {
                 {/* Caption Details */}
                 <div className="absolute bottom-5 left-5 right-5">
                   <h3 className="font-serif text-lg sm:text-xl text-[#FDF9F3] group-hover:text-[#D49B55] transition-colors">
-                    {item.title}
+                    {t(`gallery.${item.id}.title`, item.title)}
                   </h3>
                   <p className="text-xs text-[#E8DBCE]/85 font-light line-clamp-1 mt-0.5">
-                    {item.subtitle}
+                    {t(`gallery.${item.id}.subtitle`, item.subtitle)}
                   </p>
                 </div>
               </motion.div>
@@ -115,17 +115,17 @@ export default function CuratedGallery() {
                     {activeItem.category} • Coffee HOLIC Archive
                   </span>
                   <h3 className="font-serif text-2xl text-[#F4F0E8]">
-                    {activeItem.title}
+                    {t(`gallery.${activeItem.id}.title`, activeItem.title)}
                   </h3>
                   <p className="text-xs text-[#D9CBB8]/80 font-light mt-1">
-                    {activeItem.subtitle}
+                    {t(`gallery.${activeItem.id}.subtitle`, activeItem.subtitle)}
                   </p>
                 </div>
                 <button
                   onClick={() => setActiveItem(null)}
                   className="px-4 py-2 rounded-full border border-white/20 text-xs uppercase tracking-wider text-[#D9CBB8] hover:text-white"
                 >
-                  Close
+                  {t("common.close", "Close")}
                 </button>
               </div>
             </motion.div>

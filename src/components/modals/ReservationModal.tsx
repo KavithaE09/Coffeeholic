@@ -90,10 +90,10 @@ export default function ReservationModal({
                     <Sparkles className="w-3.5 h-3.5" /> {t("modal.title", "Table & Tasting Reservation")}
                   </div>
                   <h3 className="font-serif text-2xl sm:text-3xl text-[#FDFBF7] tracking-tight">
-                    Experience Coffee HOLIC
+                    {t("modal.heading", "Experience Coffee HOLIC")}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#D9CBB8]/75 mt-1 font-light">
-                    {t("modal.subtitle", "your seat at our slow extraction bar or evening coffee lounge.")}
+                    {t("modal.subtitle", "your seat at our slow extraction bar or evening coffee lounge in Pattaya.")}
                   </p>
                 </div>
 
@@ -110,17 +110,17 @@ export default function ReservationModal({
                   {/* Experience Type */}
                   <div>
                     <label className="block text-xs uppercase tracking-wider text-[#B69A70] mb-2 font-medium">
-                      Experience Type
+                      {t("modal.ritual_type", "Experience Type")}
                     </label>
                     <select
                       value={ritualType}
                       onChange={(e) => setRitualType(e.target.value)}
                       className="w-full bg-[#1C1612] border border-[#B69A70]/25 rounded-lg px-3 py-2.5 text-xs sm:text-sm text-[#FDFBF7] focus:border-[#FFA827] focus:outline-none transition-colors"
                     >
-                      <option value="slow-bar">Daytime Pour-Over Tasting Flight (Single Origin)</option>
-                      <option value="cocktail-lounge">Evening Coffee Lounge &amp; Elixirs (Twilight Bar)</option>
-                      <option value="vip-room">Private Omakase Coffee Ritual (Up to 6 Guests)</option>
-                      <option value="casual-table">Standard Cafe Table Reservation</option>
+                      <option value="slow-bar">{t("modal.ritual_slowbar", "Daytime Pour-Over Tasting Flight (Single Origin)")}</option>
+                      <option value="cocktail-lounge">{t("modal.ritual_mixology", "Evening Coffee Lounge & Elixirs (Twilight Bar)")}</option>
+                      <option value="vip-room">{t("modal.ritual_vip", "Private Omakase Coffee Ritual (Up to 6 Guests)")}</option>
+                      <option value="casual-table">{t("modal.ritual_standard", "Standard Cafe Table Reservation")}</option>
                     </select>
                   </div>
 
@@ -128,7 +128,7 @@ export default function ReservationModal({
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div>
                       <label className="block text-xs uppercase tracking-wider text-[#B69A70] mb-1.5 font-medium flex items-center gap-1">
-                        <Calendar className="w-3 h-3" /> Date
+                        <Calendar className="w-3 h-3" /> {t("modal.date", "Date")}
                       </label>
                       <input
                         type="date"
@@ -140,7 +140,7 @@ export default function ReservationModal({
                     </div>
                     <div>
                       <label className="block text-xs uppercase tracking-wider text-[#B69A70] mb-1.5 font-medium flex items-center gap-1">
-                        <Clock className="w-3 h-3" /> Time
+                        <Clock className="w-3 h-3" /> {t("modal.time", "Time")}
                       </label>
                       <select
                         value={time}
@@ -158,18 +158,18 @@ export default function ReservationModal({
                     </div>
                     <div>
                       <label className="block text-xs uppercase tracking-wider text-[#B69A70] mb-1.5 font-medium flex items-center gap-1">
-                        <Users className="w-3 h-3" /> Guests
+                        <Users className="w-3 h-3" /> {t("modal.guests", "Guests")}
                       </label>
                       <select
                         value={guests}
                         onChange={(e) => setGuests(e.target.value)}
                         className="w-full bg-[#1C1612] border border-[#B69A70]/25 rounded-lg px-3 py-2 text-xs sm:text-sm text-[#FDFBF7] focus:border-[#FFA827] focus:outline-none transition-colors"
                       >
-                        <option value="1">1 Person</option>
-                        <option value="2">2 Guests</option>
-                        <option value="3">3-4 Guests</option>
-                        <option value="6">5-6 Guests</option>
-                        <option value="8">VIP Salon (7-10 Guests)</option>
+                        <option value="1">{t("modal.guests_1", "1 Person")}</option>
+                        <option value="2">{t("modal.guests_2", "2 Guests")}</option>
+                        <option value="3">{t("modal.guests_3_4", "3-4 Guests")}</option>
+                        <option value="6">{t("modal.guests_5_6", "5-6 Guests")}</option>
+                        <option value="8">{t("modal.guests_vip", "VIP Salon (7-10 Guests)")}</option>
                       </select>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ export default function ReservationModal({
                     <div>
                       <input
                         type="text"
-                        placeholder="Your Full Name"
+                        placeholder={t("modal.name_placeholder", "Your Full Name")}
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
@@ -189,7 +189,7 @@ export default function ReservationModal({
                     <div>
                       <input
                         type="tel"
-                        placeholder="Phone / WhatsApp (+66)"
+                        placeholder={t("modal.phone_placeholder", "Phone / WhatsApp (+66)")}
                         required
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
@@ -201,7 +201,7 @@ export default function ReservationModal({
                   <div>
                     <input
                       type="email"
-                      placeholder="Email Address (for instant confirmation)"
+                      placeholder={t("modal.email_placeholder", "Email Address (for instant confirmation)")}
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -212,7 +212,7 @@ export default function ReservationModal({
                   <div>
                     <textarea
                       rows={2}
-                      placeholder="Dietary requests, anniversary notes, bean preference..."
+                      placeholder={t("modal.notes_placeholder", "Dietary requests, anniversary notes, bean preference...")}
                       value={notes}
                       onChange={(e) => setNotes(e.target.value)}
                       className="w-full bg-[#1C1612] border border-[#B69A70]/25 rounded-lg px-3 py-2 text-xs sm:text-sm text-[#FDFBF7] placeholder:text-[#D9CBB8]/40 focus:border-[#FFA827] focus:outline-none transition-colors resize-none"
@@ -222,7 +222,7 @@ export default function ReservationModal({
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full py-3 px-6 rounded-lg bg-gradient-to-r from-[#FFA827] to-[#E59524] text-[#140F0B] font-semibold text-xs uppercase tracking-widest hover:brightness-110 active:scale-[0.99] transition-all shadow-[0_0_20px_rgba(255,168,39,0.3)] mt-2"
+                    className="w-full py-3 px-6 rounded-lg bg-gradient-to-r from-[#FFA827] to-[#E59524] text-[#140F0B] font-semibold text-xs uppercase tracking-widest hover:brightness-110 active:scale-[0.99] transition-all shadow-[0_0_20px_rgba(255,168,39,0.3)] mt-2 cursor-pointer"
                   >
                     {t("modal.submit", "Confirm Table Reservation")}
                   </button>

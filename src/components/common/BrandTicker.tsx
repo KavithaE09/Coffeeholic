@@ -8,15 +8,15 @@ export default function BrandTicker() {
   const { t } = useLanguage();
 
   const items = [
-    "CoffeeHolic Pattaya",
-    "5.0 ★ Google Verified",
-    "Jomtien, Bang Lamung",
+    t("ticker.brand", "CoffeeHolic Pattaya"),
+    t("ticker.google_verified", "5.0 ★ Google Verified"),
+    t("ticker.location", "Jomtien, Bang Lamung"),
     t("ticker.specialty", "Specialty Fresh Roast"),
     t("ticker.cold_drip", "Cold Drip Mastery"),
     t("ticker.omakase", "Omakase Tasting"),
     t("ticker.cocktails", "Signature Brews & Elixirs"),
     t("ticker.night_salon", "Twilight Coffee Lounge"),
-    "Open Daily • 08:00–20:00",
+    t("ticker.hours", "Open Daily • 08:00–20:00"),
   ];
 
   const duplicated = [...items, ...items, ...items];

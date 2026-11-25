@@ -35,7 +35,7 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
             {t("loc.title", "Visit Our Cafe.")}
           </h2>
           <p className="text-sm text-[#8B5E33] font-mono uppercase tracking-widest mt-3 font-semibold">
-            Jomtien, Pattaya — Thailand
+            {t("loc.subheading", "Jomtien, Pattaya — Thailand")}
           </p>
         </motion.div>
 
@@ -58,24 +58,24 @@ export default function LocationsAndContact({ onOpenReservation }: LocationsAndC
                 {location.name}
               </h3>
               <p className="text-sm text-[#6D5345] font-light italic mb-6">
-                &ldquo;{location.tagline}&rdquo;
+                &ldquo;{t("loc.tagline", location.tagline)}&rdquo;
               </p>
 
               <div className="space-y-4 text-xs sm:text-sm text-[#4A352B]">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#8B5E33] mt-1 shrink-0" />
                   <div>
-                    <p className="font-medium text-[#2C1F18]">{location.district}</p>
+                    <p className="font-medium text-[#2C1F18]">{t("loc.district", location.district)}</p>
                     <p className="opacity-80 font-light text-[#5A453A]">{location.address}</p>
-                    <p className="opacity-80 font-light text-[#5A453A]">{location.city}</p>
+                    <p className="opacity-80 font-light text-[#5A453A]">{t("loc.city", location.city)}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <Clock className="w-4 h-4 text-[#8B5E33] mt-1 shrink-0" />
                   <div>
-                    <p className="font-medium text-[#2C1F18]">Operating Hours</p>
-                    <p className="opacity-80 font-light text-[#5A453A]">{location.hours}</p>
+                    <p className="font-medium text-[#2C1F18]">{t("loc.hours_label", "Operating Hours")}</p>
+                    <p className="opacity-80 font-light text-[#5A453A]">{t("loc.hours_val", location.hours)}</p>
                   </div>
                 </div>
 

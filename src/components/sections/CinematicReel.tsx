@@ -22,27 +22,33 @@ export default function CinematicReel() {
   const clips: VideoClip[] = [
     {
       id: "beans-falling",
-      title: "The Roaster's Descent",
-      subtitle: "3D Slow-Motion Gravity Harvest",
-      description:
-        "High-altitude Chiang Mai Arabica beans tumbling through obsidian space in hyper-slow-motion. Every bean is roasted to medium-light profile to preserve delicate citrus aromatics.",
+      title: t("reel.clip1_title", "The Roaster's Descent"),
+      subtitle: t("reel.clip1_subtitle", "3D Slow-Motion Gravity Harvest"),
+      description: t(
+        "reel.clip1_desc",
+        "High-altitude Chiang Mai Arabica beans tumbling through obsidian space in hyper-slow-motion. Every bean is roasted to medium-light profile to preserve delicate citrus aromatics."
+      ),
       src: "/assets/videos/coffee-beans-falling.mp4",
     },
     {
       id: "espresso-pour",
-      title: "Liquid Gold Extraction",
-      subtitle: "9-Bar Chrome Group Head Dripping",
-      description:
-        "Extracted under 92.4°C thermal stability. Thick golden hazelnut crema coalescing into an unctuous, syrupy ristretto stream with velvet mouthfeel.",
+      title: t("reel.clip2_title", "Liquid Gold Extraction"),
+      subtitle: t("reel.clip2_subtitle", "9-Bar Chrome Group Head Dripping"),
+      description: t(
+        "reel.clip2_desc",
+        "Extracted under 92.4°C thermal stability. Thick golden hazelnut crema coalescing into an unctuous, syrupy ristretto stream with velvet mouthfeel."
+      ),
       src: "/assets/videos/espresso-extraction.mp4",
       poster: "/assets/cafe 1.webp",
     },
     {
       id: "iced-swirl",
-      title: "Velvet Cloud Swirl",
-      subtitle: "Cold Brew Meets Hokkaido Milk",
-      description:
-        "Our signature Pattaya afternoon ritual: slow-dripped single origin cascara and espresso swirling into chilled organic milk, creating hypnotic marble clouds.",
+      title: t("reel.clip3_title", "Velvet Cloud Swirl"),
+      subtitle: t("reel.clip3_subtitle", "Cold Brew Meets Hokkaido Milk"),
+      description: t(
+        "reel.clip3_desc",
+        "Our signature Pattaya afternoon ritual: slow-dripped single origin cascara and espresso swirling into chilled organic milk, creating hypnotic marble clouds."
+      ),
       src: "/assets/videos/iced-coffee-swirl.mp4",
       poster: "/assets/cafe2.webp",
     },
@@ -94,17 +100,12 @@ export default function CinematicReel() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-[#8B5E33] mb-3 font-semibold">
-              <Film className="w-4 h-4" />
-              <span>{t("reel.badge", "Cinematic Motion Archive")}</span>
-            </div>
+            
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-[#241711] leading-[1.15]">
               {t("reel.title", "The Craft in Motion.")}
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-[#4F3628] font-normal max-w-md leading-relaxed">
-            {t("reel.desc", "Slow down and observe coffee extraction as visual poetry. From 3D bean tumbling to golden crema swirls, witness specialty coffee engineered with Japanese reverence.")}
-          </p>
+          
         </div>
 
         {/* Master Cinema Screen */}
@@ -195,7 +196,7 @@ export default function CinematicReel() {
                   {isActive && (
                     <div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#8B5E33]/85 backdrop-blur-md border border-[#D49B55]/50 text-[#FFF9F2] text-[10px] font-mono">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#D49B55] animate-pulse" />
-                      <span>NOW PLAYING</span>
+                      <span>{t("reel.now_playing", "NOW PLAYING")}</span>
                     </div>
                   )}
                 </div>

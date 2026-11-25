@@ -29,6 +29,22 @@ export default function Collection() {
   const displayedItems = isExpanded ? filteredItems : filteredItems.slice(0, 6);
   const hasMore = filteredItems.length > 6;
 
+  const getItemName = (item: MenuItem) => {
+    if (language === "th") return item.thaiName || item.name;
+    if (language === "ru") return item.ruName || item.name;
+    if (language === "zh") return item.zhName || item.name;
+    return item.name;
+  };
+
+  const getServingTemp = (temp: string) => {
+    if (temp === "Both") return t("temp.both", "Hot / Iced");
+    if (temp === "Hot") return t("temp.hot", "Hot");
+    if (temp === "Iced") return t("temp.iced", "Iced");
+    if (temp === "Frappe") return t("temp.frappe", "Frappe");
+    if (temp === "Sparkling") return t("temp.sparkling", "Sparkling");
+    return temp;
+  };
+
   return (
     <section id="collection" className="relative py-28 sm:py-36 bg-gradient-to-br from-[#FFFBF5] via-[#F5EAD9] to-[#EBD5BC] text-[#241711] overflow-hidden">
       {/* Dynamic Dual-Color Glowing Orbs */}
@@ -97,14 +113,14 @@ export default function Collection() {
                   <div>
                     <div className="flex items-baseline justify-between gap-2 mb-1.5">
                       <h3 className="font-serif text-xl sm:text-2xl text-[#2C1F18] group-hover:text-[#8B5E33] transition-colors leading-snug">
-                        {language === "th" ? item.thaiName : item.name}
+                        {getItemName(item)}
                       </h3>
                       <div className="text-right shrink-0">
                         {item.priceHotTHB && item.priceIcedTHB ? (
                           <div className="text-xs sm:text-sm font-mono text-[#8B5E33] font-semibold whitespace-nowrap">
-                            <span className="text-[#6D5345] text-[10px]">HOT </span>฿{item.priceHotTHB}
+                            <span className="text-[#6D5345] text-[10px]">{t("common.hot", "HOT")} </span>฿{item.priceHotTHB}
                             <span className="text-[#C4A77D] mx-1">/</span>
-                            <span className="text-[#6D5345] text-[10px]">ICED </span>฿{item.priceIcedTHB}
+                            <span className="text-[#6D5345] text-[10px]">{t("common.iced", "ICED")} </span>฿{item.priceIcedTHB}
                           </div>
                         ) : (
                           <span className="font-mono text-base font-semibold text-[#8B5E33]">
@@ -122,10 +138,10 @@ export default function Collection() {
                   {/* Clean Card Footer with Details Action */}
                   <div className="pt-3 border-t border-[#E2D5C8] flex items-center justify-between">
                     <span className="text-[11px] font-mono text-[#6D5345] tracking-wider">
-                      {item.servingTemp === "Both" ? "Hot / Iced" : item.servingTemp}
+                      {getServingTemp(item.servingTemp)}
                     </span>
                     <span className="text-[11px] text-[#8B5E33] font-mono uppercase tracking-wider group-hover:translate-x-1.5 transition-transform font-semibold flex items-center gap-1">
-                      Details <span>&rarr;</span>
+                      {t("common.details", "Details")} <span>&rarr;</span>
                     </span>
                   </div>
                 </div>
@@ -149,8 +165,8 @@ export default function Collection() {
             >
               <span>
                 {isExpanded
-                  ? "Show Less"
-                  : `Explore Full Menu (${filteredItems.length} Items)`}
+                  ? t("collection.show_less", "Show Less")
+                  : `${t("collection.explore_full", "Explore Full Menu")} (${filteredItems.length})`}
               </span>
               <span className={`text-[#FFF9F2] transition-transform duration-300 font-bold ${isExpanded ? "rotate-180" : "group-hover:translate-y-1"}`}>
                 &darr;
@@ -200,18 +216,20 @@ export default function Collection() {
                       {selectedProduct.origin}
                     </span>
                     <h3 className="font-serif text-3xl sm:text-4xl text-[#F4F0E8] mt-1">
-                      {language === "th" ? selectedProduct.thaiName : selectedProduct.name}
+                      {getItemName(selectedProduct)}
                     </h3>
                     <p className="text-xs text-[#B69A70] font-mono mt-1">
-                      {selectedProduct.servingTemp === "Both" ? "Hot & Iced Available" : `${selectedProduct.servingTemp} Served`}
+                      {selectedProduct.servingTemp === "Both"
+                        ? t("collection.hot_iced_available", "Hot & Iced Available")
+                        : `${getServingTemp(selectedProduct.servingTemp)} ${t("collection.served", "Served")}`}
                     </p>
                   </div>
                   <div className="text-right">
                     {selectedProduct.priceHotTHB && selectedProduct.priceIcedTHB ? (
                       <div className="font-mono text-xl sm:text-2xl font-bold text-[#FFA827]">
-                        <span className="text-xs text-[#D9CBB8]/70 mr-1 font-normal">HOT</span>฿{selectedProduct.priceHotTHB}
+                        <span className="text-xs text-[#D9CBB8]/70 mr-1 font-normal">{t("common.hot", "HOT")}</span>฿{selectedProduct.priceHotTHB}
                         <span className="mx-2 text-[#FFA827]/40">/</span>
-                        <span className="text-xs text-[#D9CBB8]/70 mr-1 font-normal">ICED</span>฿{selectedProduct.priceIcedTHB}
+                        <span className="text-xs text-[#D9CBB8]/70 mr-1 font-normal">{t("common.iced", "ICED")}</span>฿{selectedProduct.priceIcedTHB}
                       </div>
                     ) : (
                       <span className="font-mono text-2xl font-bold text-[#FFA827]">
@@ -230,7 +248,7 @@ export default function Collection() {
                 {selectedProduct.notes && selectedProduct.notes.length > 0 && (
                   <div className="pt-4 border-t border-white/10 space-y-3">
                     <h4 className="text-xs uppercase font-mono tracking-widest text-[#B69A70]">
-                      Cupping &amp; Sensory Notes
+                      {t("collection.cupping_notes", "Cupping & Sensory Notes")}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedProduct.notes.map((note, idx) => (
@@ -246,8 +264,8 @@ export default function Collection() {
                 )}
 
                 <div className="pt-4 flex items-center justify-between text-xs font-mono text-[#D9CBB8]/70">
-                  <span>Serving Style: {selectedProduct.servingTemp}</span>
-                  <span>Roast Profile: {selectedProduct.roastLevel || "Artisanal Blend"}</span>
+                  <span>{t("collection.serving_style", "Serving Style")}: {getServingTemp(selectedProduct.servingTemp)}</span>
+                  <span>{t("collection.roast_profile", "Roast Profile")}: {selectedProduct.roastLevel || t("collection.artisanal_blend", "Artisanal Blend")}</span>
                 </div>
               </div>
             </motion.div>

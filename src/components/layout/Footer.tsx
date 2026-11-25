@@ -78,32 +78,32 @@ export default function Footer() {
           {/* Column 2: Navigation Links (lg:col-span-3) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-xs uppercase font-mono tracking-[0.2em] text-[#C4A77D]">
-              Cafe Directory
+              {t("footer.directory", "Cafe Directory")}
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#E8DBCE]/85 font-light">
               <li>
                 <a href="#about" className="hover:text-[#D49B55] transition-colors">
-                  Philosophy &amp; Terroir
+                  {t("footer.philosophy", "Philosophy & Terroir")}
                 </a>
               </li>
               <li>
                 <a href="#collection" className="hover:text-[#D49B55] transition-colors">
-                  Curated Coffee &amp; Beverage Menu
+                  {t("footer.menu", "Curated Coffee & Beverage Menu")}
                 </a>
               </li>
               <li>
                 <a href="#experience" className="hover:text-[#FFA827] transition-colors">
-                  Day Sanctuary • Night Bar
+                  {t("footer.experience", "Day Sanctuary • Night Bar")}
                 </a>
               </li>
               <li>
                 <a href="#gallery" className="hover:text-[#FFA827] transition-colors">
-                  Visual Archive &amp; Architecture
+                  {t("footer.gallery", "Visual Archive & Architecture")}
                 </a>
               </li>
               <li>
                 <a href="#locations" className="hover:text-[#FFA827] transition-colors">
-                  Pattaya Cafe Location
+                  {t("footer.location", "Pattaya Cafe Location")}
                 </a>
               </li>
             </ul>
@@ -112,10 +112,10 @@ export default function Footer() {
           {/* Column 3: VIP Newsletter & Private Tastings (lg:col-span-4) */}
           <div className="lg:col-span-4 space-y-4">
             <h4 className="text-xs uppercase font-mono tracking-[0.2em] text-[#B69A70]">
-              The Coffee HOLIC Gazette
+              {t("footer.gazette", "The Coffee HOLIC Gazette")}
             </h4>
             <p className="text-xs text-[#D9CBB8]/75 font-light leading-relaxed">
-              Receive private invitations to seasonal single-origin micro-lot arrivals, barista omakase sessions, and evening vinyl lounge nights.
+              {t("footer.newsletter_desc", "Receive private invitations to seasonal single-origin micro-lot arrivals, barista omakase sessions, and evening vinyl lounge nights.")}
             </p>
 
             {!subscribed ? (
@@ -124,26 +124,26 @@ export default function Footer() {
                   <input
                     type="email"
                     required
-                    placeholder="Enter your email address"
+                    placeholder={t("footer.email_placeholder", "Enter your email address")}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full bg-[#241C17] border border-[#B69A70]/30 rounded-lg px-3.5 py-2 text-xs text-[#FDFBF7] placeholder:text-[#D9CBB8]/40 focus:border-[#FFA827] focus:outline-none transition-colors"
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-[#FFA827] text-[#140F0B] rounded-lg font-semibold text-xs uppercase tracking-wider hover:brightness-110 transition-all shrink-0"
+                    className="px-4 py-2 bg-[#FFA827] text-[#140F0B] rounded-lg font-semibold text-xs uppercase tracking-wider hover:brightness-110 transition-all shrink-0 cursor-pointer"
                   >
-                    Join
+                    {t("footer.join", "Join")}
                   </button>
                 </div>
                 <p className="text-[10px] text-[#D9CBB8]/50">
-                  Strictly curated correspondence. Unsubscribe at any time.
+                  {t("footer.privacy", "Strictly curated correspondence. Unsubscribe at any time.")}
                 </p>
               </form>
             ) : (
               <div className="p-3 bg-[#FFA827]/10 border border-[#FFA827]/30 rounded-lg text-xs text-[#FFA827] flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
-                <span>Welcome to the private tasting circle. Check your inbox soon.</span>
+                <span>{t("footer.subscribed", "Welcome to the private tasting circle. Check your inbox soon.")}</span>
               </div>
             )}
           </div>
@@ -152,7 +152,7 @@ export default function Footer() {
         {/* Bottom Giant Watermark & Copyright */}
         <div className="pt-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#D9CBB8]/50">
           <p>
-            &copy; {new Date().getFullYear()} Coffee HOLIC – Cafe &amp; Bar. All rights reserved. Pattaya, Thailand.
+            &copy; {new Date().getFullYear()} Coffee HOLIC – Cafe &amp; Bar. {t("footer.rights", "All rights reserved.")}
           </p>
 
           <button

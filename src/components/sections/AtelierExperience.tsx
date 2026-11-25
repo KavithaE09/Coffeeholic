@@ -17,72 +17,72 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
   const moodData = {
     day: {
       badge: "",
-      title: t("exp.day_title", "The Meditative Kissaten Slow Bar"),
-      headline: "Sunlit Pour-Overs & Single-Origin Terroir",
+      title: t("exp.day_title", "Day Cafe"),
+      headline: t("exp.day_headline", "Sunlit Pour-Overs & Single-Origin Terroir"),
       description: t(
         "exp.day_desc",
         "Sunlit minimalism, whispering steam wands, and the contemplation of rare origin coffees poured through artisan glassware."
       ),
-      musicTrack: "Lo-Fi Beats & Ambient Acoustic Jazz",
+      musicTrack: t("exp.day_music", "Lo-Fi Beats & Ambient Acoustic Jazz"),
       image: "/assets/cafe6.webp",
       detailTag: "Hasami Ceramics • 92.4°C Micro-Pour",
       accent: "#FFA827",
       features: [
         {
           icon: Coffee,
-          title: "Single-Origin Geisha Flights",
-          desc: "Rotating micro-lots from Chiang Mai highlands extracted with custom titanium flat-burr calibrations.",
+          title: t("exp.day_feat0_title", "Single-Origin Geisha Flights"),
+          desc: t("exp.day_feat0_desc", "Rotating micro-lots from Chiang Mai highlands extracted with custom titanium flat-burr calibrations."),
         },
         {
           icon: Sparkles,
-          title: "Ceremonial Uji Matcha",
-          desc: "First-harvest Kyoto Uji green tea whisked fresh over chilled organic Hokkaido fresh milk.",
+          title: t("exp.day_feat1_title", "Ceremonial Uji Matcha"),
+          desc: t("exp.day_feat1_desc", "First-harvest Kyoto Uji green tea whisked fresh over chilled organic Hokkaido fresh milk."),
         },
         {
           icon: Sun,
-          title: "Sunlit Kissaten Sanctuary",
-          desc: "Natural illumination, warm timber counter finishes, and indoor lush tropical ferns.",
+          title: t("exp.day_feat2_title", "Sunlit Kissaten Sanctuary"),
+          desc: t("exp.day_feat2_desc", "Natural illumination, warm timber counter finishes, and indoor lush tropical ferns."),
         },
         {
           icon: Sliders,
-          title: "Precision Boilers & Scales",
-          desc: "9-bar thermal pressure stability and digital gram profiling for velvety golden hazelnut crema.",
+          title: t("exp.day_feat3_title", "Precision Boilers & Scales"),
+          desc: t("exp.day_feat3_desc", "9-bar thermal pressure stability and digital gram profiling for velvety golden hazelnut crema."),
         },
       ],
       ctaText: "Reserve Day Tasting Flight",
     },
     night: {
       badge: "",
-      title: t("exp.night_title", "Intimate Amber Glow & Coffee Mixology"),
-      headline: "Bespoke Cascara Elixirs & Vinyl Sounds",
+      title: t("exp.night_title", "Night Sanctuary"),
+      headline: t("exp.night_headline", "Bespoke Cascara Elixirs & Vinyl Sounds"),
       description: t(
         "exp.night_desc",
         "Warm low-frequency vinyl, bespoke cold-drip mixology, and amber luminescence where coffee transforms into intoxicating twilight elixirs."
       ),
-      musicTrack: "Warm Vinyl Soul & Late-Night Downtempo",
+      musicTrack: t("exp.night_music", "Warm Vinyl Soul & Late-Night Downtempo"),
       image: "/assets/real/glass-facade-neon.jpg",
       detailTag: "Hand-Carved Ice • Smoked Cascara Elixirs",
       accent: "#FF8800",
       features: [
         {
           icon: GlassWater,
-          title: "Smoked Cascara Cold Drip",
-          desc: "Specialty cold drip cascara infused with aged botanicals, torched orange peel, and dark cacao.",
+          title: t("exp.night_feat0_title", "Smoked Cascara Cold Drip"),
+          desc: t("exp.night_feat0_desc", "Specialty cold drip cascara infused with aged botanicals, torched orange peel, and dark cacao."),
         },
         {
           icon: Sparkles,
-          title: "Hand-Carved Ice Spheres",
-          desc: "Zero-dilution crystal clear spheres hand-carved for optimum slow-sipping temperature.",
+          title: t("exp.night_feat1_title", "Hand-Carved Ice Spheres"),
+          desc: t("exp.night_feat1_desc", "Zero-dilution crystal clear spheres hand-carved for optimum slow-sipping temperature."),
         },
         {
           icon: Moon,
-          title: "Amber Neon Luminescence",
-          desc: "Warm neon reflections across acoustic glass and comfortable tufted leather lounge seating.",
+          title: t("exp.night_feat2_title", "Amber Neon Luminescence"),
+          desc: t("exp.night_feat2_desc", "Warm neon reflections across acoustic glass and comfortable tufted leather lounge seating."),
         },
         {
           icon: Disc3,
-          title: "Vinyl Hi-Fi Listening Lounge",
-          desc: "Analog sound system spinning curated lo-fi jazz, neo-soul, and late-night acoustic vinyl.",
+          title: t("exp.night_feat3_title", "Vinyl Hi-Fi Listening Lounge"),
+          desc: t("exp.night_feat3_desc", "Analog sound system spinning curated lo-fi jazz, neo-soul, and late-night acoustic vinyl."),
         },
       ],
       ctaText: "Reserve Evening Salon Table",
@@ -123,7 +123,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
               }`}
             >
               <Sun className="w-3.5 h-3.5" />
-              Daylight Sanctuary
+              {t("exp.tab_day", "Daylight Sanctuary")}
             </button>
             <button
               onClick={() => setActiveMood("night")}
@@ -134,7 +134,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
               }`}
             >
               <Moon className="w-3.5 h-3.5" />
-              Twilight Cafe &amp; Bar
+              {t("exp.tab_night", "Twilight Cafe & Bar")}
             </button>
           </div>
         </div>
@@ -216,8 +216,8 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
 
               {/* Cafe Walk-in Note */}
               <div className="pt-4 border-t border-[#D5C2B0] flex items-center justify-between text-xs font-mono text-[#6D5345]">
-                <span>No reservation required for slow bar counter </span>
-                <span className="text-[#8B5E33] font-semibold">Walk-ins welcome</span>
+                <span>{t("exp.walkin_note", "No reservation required for slow bar counter")}</span>
+                <span className="text-[#8B5E33] font-semibold">{t("exp.walkins_welcome", "Walk-ins welcome")}</span>
               </div>
             </div>
           </motion.div>
