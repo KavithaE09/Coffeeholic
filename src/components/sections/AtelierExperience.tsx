@@ -16,7 +16,6 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
 
   const moodData = {
     day: {
-      badge: "",
       title: t("exp.day_title", "Day Cafe"),
       headline: t("exp.day_headline", "Sunlit Pour-Overs & Single-Origin Terroir"),
       description: t(
@@ -52,7 +51,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
       ctaText: "Reserve Day Tasting Flight",
     },
     night: {
-      badge: "",
+      
       title: t("exp.night_title", "Night Sanctuary"),
       headline: t("exp.night_headline", "Bespoke Cascara Elixirs & Vinyl Sounds"),
       description: t(
@@ -60,7 +59,7 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
         "Warm low-frequency vinyl, bespoke cold-drip mixology, and amber luminescence where coffee transforms into intoxicating twilight elixirs."
       ),
       musicTrack: t("exp.night_music", "Warm Vinyl Soul & Late-Night Downtempo"),
-      image: "/assets/real/glass-facade-neon.jpg",
+      image: "/assets/real/storefront-night.jpg",
       detailTag: "Hand-Carved Ice • Smoked Cascara Elixirs",
       accent: "#FF8800",
       features: [
@@ -149,38 +148,22 @@ export default function AtelierExperience({ onOpenReservation }: AtelierExperien
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
           >
-            {/* Cinematic Image Side with Parallax & Audio Badge */}
+            {/* Cinematic Image Side */}
             <div className="lg:col-span-7 relative">
-              <div className="relative aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px] rounded-2xl overflow-hidden border border-[#D5C2B0] bg-[#1C120C] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)]">
-                {activeMood === "night" && (
-                  <Image
-                    src={current.image}
-                    alt=""
-                    fill
-                    aria-hidden="true"
-                    className="object-cover object-center blur-2xl scale-110 opacity-50 pointer-events-none"
-                  />
-                )}
+              <div
+                className={`relative rounded-2xl overflow-hidden border border-[#D5C2B0] shadow-[0_20px_50px_rgba(44,31,24,0.2),0_0_35px_rgba(212,155,85,0.15)] ${
+                  activeMood === "night"
+                    ? "aspect-[3/4] w-full max-w-[460px] mx-auto"
+                    : "aspect-[4/3] w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[520px]"
+                }`}
+              >
                 <Image
                   src={current.image}
                   alt={current.title}
                   fill
-                  className={`${
-                    activeMood === "night" ? "object-contain" : "object-cover"
-                  } object-center filter contrast-105 brightness-95 relative z-10`}
+                  className="object-cover object-center filter contrast-105 brightness-95"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-75 z-10 pointer-events-none" />
-
-                {/* Top Timing Badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-[11px] font-mono tracking-wider bg-[#2C1F18]/85 backdrop-blur-md text-[#FDF9F3] border border-white/10 flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-[#D49B55] animate-pulse" />
-                    {current.badge}
-                  </span>
-                </div>
-
-                {/* Bottom Soundwave & Vinyl Player Badge */}
-            
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70 pointer-events-none" />
               </div>
             </div>
 
